@@ -11,7 +11,6 @@
 		D6102E2C20D9207E00B1664D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6102E2B20D9207E00B1664D /* ViewController.swift */; };
 		D6102E2F20D9207E00B1664D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6102E2D20D9207E00B1664D /* Main.storyboard */; };
 		D6102E3120D9208300B1664D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6102E3020D9208300B1664D /* Assets.xcassets */; };
-		D6102E3420D9208300B1664D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6102E3220D9208300B1664D /* LaunchScreen.storyboard */; };
 		D6102E3F20D9208300B1664D /* GanjaSommelierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6102E3E20D9208300B1664D /* GanjaSommelierUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +30,6 @@
 		D6102E2B20D9207E00B1664D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D6102E2E20D9207E00B1664D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6102E3020D9208300B1664D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D6102E3320D9208300B1664D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6102E3520D9208300B1664D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6102E3A20D9208300B1664D /* GanjaSommelierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GanjaSommelierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6102E3E20D9208300B1664D /* GanjaSommelierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GanjaSommelierUITests.swift; sourceTree = "<group>"; };
@@ -77,11 +75,13 @@
 		D6102E2820D9207E00B1664D /* GanjaSommelier */ = {
 			isa = PBXGroup;
 			children = (
+				D6102E4B20D92E6700B1664D /* Models */,
+				D6102E4A20D92E5F00B1664D /* Controllers */,
+				D6102E4920D92E3F00B1664D /* Views */,
 				D6102E2920D9207E00B1664D /* AppDelegate.swift */,
 				D6102E2B20D9207E00B1664D /* ViewController.swift */,
 				D6102E2D20D9207E00B1664D /* Main.storyboard */,
 				D6102E3020D9208300B1664D /* Assets.xcassets */,
-				D6102E3220D9208300B1664D /* LaunchScreen.storyboard */,
 				D6102E3520D9208300B1664D /* Info.plist */,
 			);
 			path = GanjaSommelier;
@@ -94,6 +94,27 @@
 				D6102E4020D9208300B1664D /* Info.plist */,
 			);
 			path = GanjaSommelierUITests;
+			sourceTree = "<group>";
+		};
+		D6102E4920D92E3F00B1664D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D6102E4A20D92E5F00B1664D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D6102E4B20D92E6700B1664D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +198,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6102E3420D9208300B1664D /* LaunchScreen.storyboard in Resources */,
 				D6102E3120D9208300B1664D /* Assets.xcassets in Resources */,
 				D6102E2F20D9207E00B1664D /* Main.storyboard in Resources */,
 			);
@@ -227,14 +247,6 @@
 				D6102E2E20D9207E00B1664D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D6102E3220D9208300B1664D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D6102E3320D9208300B1664D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

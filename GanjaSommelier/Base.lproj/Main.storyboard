@@ -79,8 +79,9 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f8D-cH-ZoJ">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                                         <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="splashBGtile" translatesAutoresizingMaskIntoConstraints="NO" id="D7s-7z-B1l">
+                                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.45000000000000001" contentMode="scaleAspectFill" semanticContentAttribute="spatial" insetsLayoutMarginsFromSafeArea="NO" image="splashBGtile" translatesAutoresizingMaskIntoConstraints="NO" id="D7s-7z-B1l">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>

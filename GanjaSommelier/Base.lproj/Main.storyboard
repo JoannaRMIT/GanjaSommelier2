@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,7 +16,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GanjaSommelier" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljs-sI-w2a">
@@ -38,7 +38,7 @@
             <objects>
                 <viewController id="0rC-gQ-kV3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8tn-2L-l9r">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gai-2l-XR5"/>
@@ -54,7 +54,7 @@
             <objects>
                 <viewController id="B4C-Xg-SAL" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cxs-4l-Yip">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="N5R-xS-Gqu"/>
@@ -70,17 +70,17 @@
             <objects>
                 <viewController id="Hfd-C9-rJR" userLabel="Splash" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hLI-Ls-3qt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="c11-j9-drV">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f8D-cH-ZoJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="splashBGtile" translatesAutoresizingMaskIntoConstraints="NO" id="D7s-7z-B1l">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
@@ -125,6 +125,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splashBGtile" width="266" height="266"/>
+        <image name="splashBGtile" width="400" height="400"/>
     </resources>
 </document>

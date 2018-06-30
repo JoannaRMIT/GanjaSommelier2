@@ -79,8 +79,6 @@
 				D6102E4A20D92E5F00B1664D /* Controllers */,
 				D6102E4920D92E3F00B1664D /* Views */,
 				D6102E2920D9207E00B1664D /* AppDelegate.swift */,
-				D6102E2B20D9207E00B1664D /* ViewController.swift */,
-				D6102E2D20D9207E00B1664D /* Main.storyboard */,
 				D6102E3020D9208300B1664D /* Assets.xcassets */,
 				D6102E3520D9208300B1664D /* Info.plist */,
 			);
@@ -99,6 +97,7 @@
 		D6102E4920D92E3F00B1664D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D6102E2D20D9207E00B1664D /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -106,6 +105,7 @@
 		D6102E4A20D92E5F00B1664D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D6102E2B20D9207E00B1664D /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

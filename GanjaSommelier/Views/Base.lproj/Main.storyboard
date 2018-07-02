@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GanjaSommelier" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljs-sI-w2a">
+                                <rect key="frame" x="52" y="411" width="271" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Did this work? Can you see this button?"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-557" y="1540"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="bbj-od-KXL">
+            <objects>
+                <viewController id="0rC-gQ-kV3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8tn-2L-l9r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gai-2l-XR5"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="bid-xX-pks"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cul-hf-Yr4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1148" y="1158"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="UVM-x0-xV9">
+            <objects>
+                <viewController id="B4C-Xg-SAL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cxs-4l-Yip">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="N5R-xS-Gqu"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="9UR-6L-Z6Z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ycq-uV-rSd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1148" y="493"/>
+        </scene>
+        <!--Splash-->
+        <scene sceneID="ylG-by-2p7">
+            <objects>
+                <viewController id="Hfd-C9-rJR" userLabel="Splash" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hLI-Ls-3qt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="1hM-Py-KNh">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="HGh-nW-fOo">
+                                <rect key="frame" x="40" y="198" width="240" height="192"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HGh-nW-fOo" secondAttribute="height" multiplier="5:4" id="x4W-Kl-1PA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                        <constraints>
+                            <constraint firstItem="HGh-nW-fOo" firstAttribute="bottom" secondItem="1hM-Py-KNh" secondAttribute="bottom" id="6LH-RO-33S"/>
+                            <constraint firstItem="HGh-nW-fOo" firstAttribute="trailing" secondItem="1hM-Py-KNh" secondAttribute="trailing" id="97m-pN-q1v"/>
+                            <constraint firstItem="HGh-nW-fOo" firstAttribute="centerX" secondItem="1hM-Py-KNh" secondAttribute="centerX" id="wqD-Xs-Pgm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tkq-KY-GqS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cdv-ur-e72" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-558.75" y="818.66197183098598"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="296" height="280"/>
+        <image name="splash" width="375" height="667"/>
+    </resources>
+</document>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hfd-C9-rJR">
-    <device id="ipad10_5" orientation="landscape">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,7 +16,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" userLabel="Search Controller" customClass="ViewController" customModule="GanjaSommelier" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Njw-tx-tcj">
@@ -65,21 +65,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-558.75" y="1539.0845070422536"/>
+            <point key="canvasLocation" x="114" y="839"/>
         </scene>
         <!--Splash-->
         <scene sceneID="ylG-by-2p7">
             <objects>
                 <viewController id="Hfd-C9-rJR" userLabel="Splash" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hLI-Ls-3qt">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1hM-Py-KNh">
-                                <rect key="frame" x="0.0" y="20" width="1112" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HGh-nW-fOo">
-                                <rect key="frame" x="408" y="445.5" width="296" height="280"/>
+                                <rect key="frame" x="59" y="372" width="296" height="280"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -96,14 +96,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdv-ur-e72" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-559.4202898550725" y="666.84782608695662"/>
+            <point key="canvasLocation" x="-790" y="839"/>
         </scene>
         <!--Search Results Controller-->
         <scene sceneID="klk-H1-0HB">
             <objects>
                 <viewController id="p7p-Ku-uiY" userLabel="Search Results Controller" customClass="ViewController" customModule="GanjaSommelier" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gk9-b8-YPu">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbO-jY-2Ee">
@@ -271,14 +271,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDW-Vs-sih" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="249.375" y="1538.0281690140846"/>
+            <point key="canvasLocation" x="796" y="839"/>
         </scene>
         <!--Favourites list-->
         <scene sceneID="hDl-WE-PvY">
             <objects>
                 <viewController id="kYd-vx-94y" userLabel="Favourites list" customClass="ViewController" customModule="GanjaSommelier" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fVV-Zd-I6q">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whj-Or-Zqs">
@@ -446,14 +446,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEk-oS-H8u" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-559" y="2250"/>
+            <point key="canvasLocation" x="1651" y="1542"/>
         </scene>
         <!--Strain Profile Controller-->
         <scene sceneID="azW-3L-YC3">
             <objects>
                 <viewController id="va3-Gx-7jq" userLabel="Strain Profile Controller" customClass="ViewController" customModule="GanjaSommelier" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h94-5j-RRR">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hX-fB-coZ">
@@ -586,14 +586,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hcb-aq-Jhw" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070.625" y="1536.9718309859154"/>
+            <point key="canvasLocation" x="1651" y="839"/>
         </scene>
         <!--Dish detail-->
         <scene sceneID="Uxf-Ga-ScP">
             <objects>
                 <viewController id="GXj-W8-sO3" userLabel="Dish detail" customClass="ViewController" customModule="GanjaSommelier" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WDi-vm-2E6">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8K7-H2-yXf">
@@ -685,14 +685,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZH-nq-2Qk" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1835.625" y="2250"/>
+            <point key="canvasLocation" x="-612" y="1542"/>
         </scene>
         <!--general information-->
         <scene sceneID="wZd-bM-Ly6">
             <objects>
                 <viewController id="9pr-2e-QF3" userLabel="general information" customClass="ViewController" customModule="GanjaSommelier" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e5d-9T-ju2">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8N-oG-Y9o">
@@ -733,14 +733,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CPC-s3-8D0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="247.5" y="2250"/>
+            <point key="canvasLocation" x="796" y="1542"/>
         </scene>
         <!--Dishes list-->
         <scene sceneID="CJc-qG-317">
             <objects>
                 <viewController id="R5y-oE-OyG" userLabel="Dishes list" customClass="ViewController" customModule="GanjaSommelier" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LWa-oi-9wM">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwR-gg-7Y5">
@@ -897,7 +897,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v92-wW-fN3" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070.625" y="2250"/>
+            <point key="canvasLocation" x="113" y="1543"/>
         </scene>
     </scenes>
     <resources>
@@ -916,7 +916,7 @@
         <image name="splash" width="375" height="667"/>
         <image name="star-empty" width="17" height="16"/>
         <image name="star-selected" width="17" height="16"/>
-        <image name="thumbs-down" width="22" height="23"/>
-        <image name="thumbs-up" width="22" height="23"/>
+        <image name="thumbs-down" width="22" height="22"/>
+        <image name="thumbs-up" width="22" height="22"/>
     </resources>
 </document>

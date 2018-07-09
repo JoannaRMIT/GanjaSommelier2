@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,7 +16,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" userLabel="Search Controller" customClass="ViewController" customModule="GanjaSommelier" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleAspectFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -75,8 +76,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1hM-Py-KNh">
-                                <rect key="frame" x="0.0" y="20" width="414" height="667"/>
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1hM-Py-KNh">
+                                <rect key="frame" x="0.0" y="20" width="414" height="790.33333333333337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1hM-Py-KNh" secondAttribute="height" multiplier="375:716" id="Cr7-LE-EsR"/>
+                                </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HGh-nW-fOo">
                                 <rect key="frame" x="59" y="372" width="296" height="280"/>
@@ -87,8 +91,8 @@
                         <constraints>
                             <constraint firstItem="HGh-nW-fOo" firstAttribute="bottom" secondItem="tkq-KY-GqS" secondAttribute="bottom" multiplier="3:4" constant="100" id="CoY-oL-670"/>
                             <constraint firstItem="1hM-Py-KNh" firstAttribute="leading" secondItem="tkq-KY-GqS" secondAttribute="leading" id="HmW-ZD-D12"/>
+                            <constraint firstItem="1hM-Py-KNh" firstAttribute="trailing" secondItem="tkq-KY-GqS" secondAttribute="trailing" id="gVj-FC-ZZN"/>
                             <constraint firstItem="1hM-Py-KNh" firstAttribute="top" secondItem="tkq-KY-GqS" secondAttribute="top" id="gee-ZQ-zk8"/>
-                            <constraint firstItem="1hM-Py-KNh" firstAttribute="trailing" secondItem="tkq-KY-GqS" secondAttribute="trailing" id="mmv-Ks-1oV"/>
                             <constraint firstItem="HGh-nW-fOo" firstAttribute="centerX" secondItem="tkq-KY-GqS" secondAttribute="centerX" id="qkH-Uj-6jC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tkq-KY-GqS"/>

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0478D0D920F232BE00137F90 /* FlavorMockEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478D0D820F232BE00137F90 /* FlavorMockEnum.swift */; };
+		043DF84A20F3198B0092620A /* mockEarthyEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043DF84920F3198B0092620A /* mockEarthyEnum.swift */; };
 		D6102E2A20D9207E00B1664D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6102E2920D9207E00B1664D /* AppDelegate.swift */; };
 		D6102E2C20D9207E00B1664D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6102E2B20D9207E00B1664D /* ViewController.swift */; };
 		D6102E2F20D9207E00B1664D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6102E2D20D9207E00B1664D /* Main.storyboard */; };
@@ -26,7 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0478D0D820F232BE00137F90 /* FlavorMockEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlavorMockEnum.swift; path = ../../../Tutes/tute1/tute1/Model/FlavorMockEnum.swift; sourceTree = "<group>"; };
+		043DF84920F3198B0092620A /* mockEarthyEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mockEarthyEnum.swift; sourceTree = "<group>"; };
 		D6102E2620D9207E00B1664D /* GanjaSommelier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GanjaSommelier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6102E2920D9207E00B1664D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6102E2B20D9207E00B1664D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,10 +56,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0478D0D720F2323700137F90 /* Models */ = {
+		043DF84820F3195A0092620A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0478D0D820F232BE00137F90 /* FlavorMockEnum.swift */,
+				043DF84920F3198B0092620A /* mockEarthyEnum.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -85,7 +85,7 @@
 		D6102E2820D9207E00B1664D /* GanjaSommelier */ = {
 			isa = PBXGroup;
 			children = (
-				0478D0D720F2323700137F90 /* Models */,
+				043DF84820F3195A0092620A /* Models */,
 				D6102E4A20D92E5F00B1664D /* Controllers */,
 				D6102E4920D92E3F00B1664D /* Views */,
 				D6102E2920D9207E00B1664D /* AppDelegate.swift */,
@@ -222,7 +222,7 @@
 			files = (
 				D6102E2C20D9207E00B1664D /* ViewController.swift in Sources */,
 				D6102E2A20D9207E00B1664D /* AppDelegate.swift in Sources */,
-				0478D0D920F232BE00137F90 /* FlavorMockEnum.swift in Sources */,
+				043DF84A20F3198B0092620A /* mockEarthyEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

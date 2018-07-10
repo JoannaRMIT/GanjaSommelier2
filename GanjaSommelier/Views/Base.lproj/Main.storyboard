@@ -450,7 +450,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEk-oS-H8u" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1651" y="1542"/>
+            <point key="canvasLocation" x="-791" y="1543"/>
         </scene>
         <!--Strain Profile Controller-->
         <scene sceneID="azW-3L-YC3">
@@ -689,7 +689,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZH-nq-2Qk" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-612" y="1542"/>
+            <point key="canvasLocation" x="1651" y="1542"/>
         </scene>
         <!--general information-->
         <scene sceneID="wZd-bM-Ly6">
@@ -737,7 +737,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CPC-s3-8D0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="796" y="1542"/>
+            <point key="canvasLocation" x="113" y="1543"/>
         </scene>
         <!--Dishes list-->
         <scene sceneID="CJc-qG-317">
@@ -901,7 +901,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v92-wW-fN3" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113" y="1543"/>
+            <point key="canvasLocation" x="796" y="1542"/>
         </scene>
     </scenes>
     <resources>

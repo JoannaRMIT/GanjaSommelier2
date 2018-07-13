@@ -40,7 +40,7 @@ func decodeEffectsJSON() -> [Effect]?
 
 
 
-func sortEffects(effectType: String) -> [String]
+func getEffectsArray(effectType: String) -> [String]
 {
     var allEffects = decodeEffectsJSON()
     var positiveEffectsArray = [String]()

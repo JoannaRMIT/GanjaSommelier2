@@ -12,6 +12,7 @@
 		D6102E2F20D9207E00B1664D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6102E2D20D9207E00B1664D /* Main.storyboard */; };
 		D6102E3120D9208300B1664D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6102E3020D9208300B1664D /* Assets.xcassets */; };
 		D6102E3F20D9208300B1664D /* GanjaSommelierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6102E3E20D9208300B1664D /* GanjaSommelierUITests.swift */; };
+		D6E1425820F8514600F6D034 /* tableViewTestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E1425720F8514600F6D034 /* tableViewTestTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		D6102E3A20D9208300B1664D /* GanjaSommelierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GanjaSommelierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6102E3E20D9208300B1664D /* GanjaSommelierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GanjaSommelierUITests.swift; sourceTree = "<group>"; };
 		D6102E4020D9208300B1664D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6E1425720F8514600F6D034 /* tableViewTestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewTestTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				D6102E2D20D9207E00B1664D /* Main.storyboard */,
+				D6E1425720F8514600F6D034 /* tableViewTestTableViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			files = (
 				D6102E2C20D9207E00B1664D /* ViewController.swift in Sources */,
 				D6102E2A20D9207E00B1664D /* AppDelegate.swift in Sources */,
+				D6E1425820F8514600F6D034 /* tableViewTestTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

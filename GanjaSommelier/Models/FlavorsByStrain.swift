@@ -7,12 +7,12 @@
 //
 
 import Foundation
-// this API request returns a simple array from the strain id, so no JSON deserializing for the full version
+// this API request returns a simple array from the strain id, so no JSON deserializing for the mock up version
 
 var flavors = ["Earthy","Chemical","Pine","Spicy/Herbal","Pungent","Pepper","Flowery","Citrus","Orange","Sweet","Skunk","Grape","Minty","Woody","Cheese","Diesel","Tropical","Grapefruit","Nutty","Lemon","Berry","Blueberry","Ammonia","Apple","Rose","Butter","Honey","Tea","Lime","Lavender","Strawberry","Mint","Chestnut","Tree Fruit","Pear","Apricot","Peach","Blue Cheese","Menthol","Coffee","Tar","Mango","Pineapple","Sage","Vanilla","Plum","Tobacco","Violet"]
 
 
-func pickStrainFlavors() -> [Any]
+func pickStrainFlavors() -> [String]
 {
     var pickedFlavors = [String]()
     var rand1: Int

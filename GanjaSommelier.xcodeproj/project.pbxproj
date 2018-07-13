@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0409DCF520F86D1F00206C10 /* StrainsByFlavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409DCF420F86D1F00206C10 /* StrainsByFlavor.swift */; };
+		0409DCFD20F870DA00206C10 /* StrainByFlavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409DCFC20F870DA00206C10 /* StrainByFlavor.swift */; };
 		D6102E2A20D9207E00B1664D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6102E2920D9207E00B1664D /* AppDelegate.swift */; };
 		D6102E2C20D9207E00B1664D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6102E2B20D9207E00B1664D /* ViewController.swift */; };
 		D6102E2F20D9207E00B1664D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6102E2D20D9207E00B1664D /* Main.storyboard */; };
@@ -26,10 +26,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0409DCF420F86D1F00206C10 /* StrainsByFlavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrainsByFlavor.swift; path = ../../../../../Downloads/StrainsByFlavor.swift; sourceTree = "<group>"; };
 		0409DCF820F86DAC00206C10 /* Earthy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Earthy.json; sourceTree = "<group>"; };
 		0409DCF920F86DAC00206C10 /* Pine.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Pine.json; sourceTree = "<group>"; };
 		0409DCFA20F86DAC00206C10 /* Chemical.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Chemical.json; sourceTree = "<group>"; };
+		0409DCFC20F870DA00206C10 /* StrainByFlavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrainByFlavor.swift; sourceTree = "<group>"; };
 		D6102E2620D9207E00B1664D /* GanjaSommelier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GanjaSommelier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6102E2920D9207E00B1664D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6102E2B20D9207E00B1664D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 		D6102E4B20D92E6700B1664D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0409DCF420F86D1F00206C10 /* StrainsByFlavor.swift */,
+				0409DCFC20F870DA00206C10 /* StrainByFlavor.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -235,9 +235,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0409DCF520F86D1F00206C10 /* StrainsByFlavor.swift in Sources */,
 				D6102E2C20D9207E00B1664D /* ViewController.swift in Sources */,
 				D6102E2A20D9207E00B1664D /* AppDelegate.swift in Sources */,
+				0409DCFD20F870DA00206C10 /* StrainByFlavor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

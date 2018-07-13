@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0409DCFD20F870DA00206C10 /* StrainByFlavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409DCFC20F870DA00206C10 /* StrainByFlavor.swift */; };
+		0409DCFF20F8943500206C10 /* flavors.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0409DCFE20F8943500206C10 /* flavors.txt */; };
+		0409DD0120F8947100206C10 /* FlavorsByStrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409DD0020F8947100206C10 /* FlavorsByStrain.swift */; };
 		D6102E2A20D9207E00B1664D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6102E2920D9207E00B1664D /* AppDelegate.swift */; };
 		D6102E2C20D9207E00B1664D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6102E2B20D9207E00B1664D /* ViewController.swift */; };
 		D6102E2F20D9207E00B1664D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6102E2D20D9207E00B1664D /* Main.storyboard */; };
@@ -31,6 +32,8 @@
 		0409DCF920F86DAC00206C10 /* Pine.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Pine.json; sourceTree = "<group>"; };
 		0409DCFA20F86DAC00206C10 /* Chemical.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Chemical.json; sourceTree = "<group>"; };
 		0409DCFC20F870DA00206C10 /* StrainByFlavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrainByFlavor.swift; sourceTree = "<group>"; };
+		0409DCFE20F8943500206C10 /* flavors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = flavors.txt; sourceTree = "<group>"; };
+		0409DD0020F8947100206C10 /* FlavorsByStrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavorsByStrain.swift; sourceTree = "<group>"; };
 		D6102E2620D9207E00B1664D /* GanjaSommelier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GanjaSommelier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6102E2920D9207E00B1664D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6102E2B20D9207E00B1664D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				0409DCFA20F86DAC00206C10 /* Chemical.json */,
+				0409DCFE20F8943500206C10 /* flavors.txt */,
 				0409DCF820F86DAC00206C10 /* Earthy.json */,
 				0409DCF920F86DAC00206C10 /* Pine.json */,
 			);
@@ -134,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				0409DCFC20F870DA00206C10 /* StrainByFlavor.swift */,
+				0409DD0020F8947100206C10 /* FlavorsByStrain.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			files = (
 				D6102E3120D9208300B1664D /* Assets.xcassets in Resources */,
 				D6102E2F20D9207E00B1664D /* Main.storyboard in Resources */,
+				0409DCFF20F8943500206C10 /* flavors.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6102E2C20D9207E00B1664D /* ViewController.swift in Sources */,
+				0409DD0120F8947100206C10 /* FlavorsByStrain.swift in Sources */,
 				D6102E2A20D9207E00B1664D /* AppDelegate.swift in Sources */,
 				D6E1425820F8514600F6D034 /* tableViewTestTableViewController.swift in Sources */,
 			);

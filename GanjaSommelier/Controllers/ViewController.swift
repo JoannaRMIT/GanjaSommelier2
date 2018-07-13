@@ -20,6 +20,20 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+//    let myButton = UIButton(frame : CGRectMake (10, 300, 100, 40))
+//    myButton.setImage(UIImage(named : "favourite-empty"), forState: UIControlState.Normal)
+//    myButton.setImage(UIImage(named : "favourite-selected"), forState: UIControlState.Selected)
+//    myButton.addTarget(self, action: #selector(myButtonTapped), forControlEvents: UIControlEvents.TouchUpInside)
+//    self.view.addSubview(myButton)
+//    
+//    func myButtonTapped(){
+//        if myButton.isSelected == true {
+//            myButton.isSelected = false
+//        }else {
+//            myButton.isSelected = true
+//        }
+//    }
 
 
 }

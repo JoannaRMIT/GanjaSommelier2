@@ -1163,13 +1163,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favourite-empty" translatesAutoresizingMaskIntoConstraints="NO" id="BuL-T8-NyC">
-                                <rect key="frame" x="25" y="189" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="5ba-KE-WI4"/>
-                                    <constraint firstAttribute="height" constant="40" id="f65-OZ-mSo"/>
-                                </constraints>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Depression, insomnia, cramps, pain, stress, headaches" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHz-Hk-0gt">
+                                <rect key="frame" x="89" y="501" width="251" height="38"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food-icon" translatesAutoresizingMaskIntoConstraints="NO" id="pq7-ou-OwR">
                                 <rect key="frame" x="30" y="414.5" width="40" height="27"/>
                             </imageView>
@@ -1203,12 +1202,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Depression, insomnia, cramps, pain, stress, headaches" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHz-Hk-0gt">
-                                <rect key="frame" x="89" y="501" width="251" height="38"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTC-Ql-tak">
+                                <rect key="frame" x="29" y="195" width="31" height="28"/>
+                                <state key="normal" image="favourite-empty">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" image="favourite-selected"/>
+                                <state key="highlighted" image="favourite-selected"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1216,10 +1217,10 @@
                             <constraint firstItem="ZHz-Hk-0gt" firstAttribute="leading" secondItem="E9b-xi-jgx" secondAttribute="trailing" constant="17" id="5r8-P8-af4"/>
                             <constraint firstItem="rrt-cL-PcV" firstAttribute="top" secondItem="E9b-xi-jgx" secondAttribute="bottom" constant="44" id="6M6-Fn-5kJ"/>
                             <constraint firstItem="ZHz-Hk-0gt" firstAttribute="top" secondItem="e2n-4y-7CV" secondAttribute="bottom" constant="2" id="6st-cR-J4y"/>
-                            <constraint firstItem="BuL-T8-NyC" firstAttribute="top" secondItem="JGD-kB-WXl" secondAttribute="bottom" constant="-61" id="9Ae-KH-c1p"/>
                             <constraint firstItem="PjG-Uh-ye0" firstAttribute="top" secondItem="5mG-cT-xD1" secondAttribute="bottom" constant="2" id="AFu-F4-ZyR"/>
                             <constraint firstItem="ME6-0k-6gY" firstAttribute="top" secondItem="fI1-Gg-Ym8" secondAttribute="bottom" constant="5" id="B8U-eX-4hZ"/>
                             <constraint firstItem="oE2-lo-Afj" firstAttribute="top" secondItem="CNJ-Wa-vPe" secondAttribute="top" constant="12" id="Dzw-VW-Epj"/>
+                            <constraint firstItem="DTC-Ql-tak" firstAttribute="top" secondItem="JGD-kB-WXl" secondAttribute="bottom" constant="-55" id="Efj-Ug-OxN"/>
                             <constraint firstItem="5mG-cT-xD1" firstAttribute="leading" secondItem="WxA-tH-4eg" secondAttribute="trailing" constant="18" id="Ejs-8H-vgB"/>
                             <constraint firstItem="pq7-ou-OwR" firstAttribute="leading" secondItem="CNJ-Wa-vPe" secondAttribute="leading" constant="30" id="Izg-DB-yYh"/>
                             <constraint firstItem="ME6-0k-6gY" firstAttribute="leading" secondItem="z4T-6R-oNV" secondAttribute="trailing" constant="10.5" id="JRh-sB-uTf"/>
@@ -1235,12 +1236,12 @@
                             <constraint firstItem="rrt-cL-PcV" firstAttribute="leading" secondItem="fI1-Gg-Ym8" secondAttribute="trailing" constant="10.5" id="cZw-9o-yLO"/>
                             <constraint firstItem="oE2-lo-Afj" firstAttribute="centerX" secondItem="CNJ-Wa-vPe" secondAttribute="centerX" id="eZ2-nS-hcH"/>
                             <constraint firstItem="eAo-V6-wUa" firstAttribute="top" secondItem="XAI-2N-HrT" secondAttribute="bottom" constant="2" id="etS-Gi-oEY"/>
+                            <constraint firstItem="JGD-kB-WXl" firstAttribute="leading" secondItem="DTC-Ql-tak" secondAttribute="trailing" constant="-65" id="f5a-mr-VKa"/>
                             <constraint firstItem="e2n-4y-7CV" firstAttribute="leading" secondItem="E9b-xi-jgx" secondAttribute="trailing" constant="17" id="faK-83-y4C"/>
                             <constraint firstItem="fI1-Gg-Ym8" firstAttribute="top" secondItem="E9b-xi-jgx" secondAttribute="bottom" constant="48" id="g8f-B2-CNW"/>
                             <constraint firstItem="JGD-kB-WXl" firstAttribute="top" secondItem="3hX-fB-coZ" secondAttribute="bottom" constant="8" id="gLt-Is-IAJ"/>
                             <constraint firstItem="z4T-6R-oNV" firstAttribute="leading" secondItem="CNJ-Wa-vPe" secondAttribute="leading" constant="33" id="gRs-nu-Rfh"/>
                             <constraint firstItem="cYz-Yv-RMx" firstAttribute="leading" secondItem="CNJ-Wa-vPe" secondAttribute="leading" constant="30" id="hqH-mj-3CS"/>
-                            <constraint firstItem="BuL-T8-NyC" firstAttribute="leading" secondItem="CNJ-Wa-vPe" secondAttribute="leading" constant="25" id="i4J-zp-UT6"/>
                             <constraint firstItem="HnH-Sg-xAb" firstAttribute="leading" secondItem="CNJ-Wa-vPe" secondAttribute="leading" constant="23" id="ipD-2d-tLv"/>
                             <constraint firstItem="HnH-Sg-xAb" firstAttribute="top" secondItem="CNJ-Wa-vPe" secondAttribute="top" constant="12" id="mXf-ZQ-t4a"/>
                             <constraint firstAttribute="trailing" secondItem="JGD-kB-WXl" secondAttribute="trailing" constant="-5" id="mYe-kt-Brh"/>
@@ -2003,7 +2004,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iDN-UQ-0Du" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2847.1999999999998" y="1536.8815592203898"/>
+            <point key="canvasLocation" x="4078" y="1500"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9sx-4f-FE6">
@@ -2218,6 +2219,7 @@ AABZAAAAAAAAAAAAAAAAAAAjlQ
         <image name="dish-tab-active" width="42" height="28"/>
         <image name="dish-tab-inactive" width="42" height="28"/>
         <image name="favourite-empty" width="31" height="28"/>
+        <image name="favourite-selected" width="31" height="28"/>
         <image name="flavours-icon" width="40" height="33"/>
         <image name="food-icon" width="40" height="27"/>
         <image name="health-icon" width="37" height="37"/>

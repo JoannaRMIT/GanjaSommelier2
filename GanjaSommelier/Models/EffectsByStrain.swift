@@ -8,7 +8,7 @@
 
 import Foundation
 
-//hardcoded array for the mockup, probably should have made a func that could be used for flavors as well
+//hardcoded array for the mockup
 
 var positive = ["Relaxed", "Hungry", "Euphoric", "Happy", "Creative", "Energetic", "Talkative", "Uplifted", "Tingly", "Sleepy", "Focused", "Giggly", "Aroused"]
 
@@ -16,27 +16,24 @@ var negative = ["Dizzy", "Dry Mouth", "Paranoid", "Dry Eyes", "Anxious"]
 
 var medical = ["Depression", "Insomnia", "Pain", "Stress", "Cramps", "Lack of Appetite", "Nausea", "Headaches", "Fatigue", "Eye Pressure", "Inflammation", "Spasticity", "Seizures", "Muscle Spasms"]
 
+var flavors = ["Earthy","Chemical","Pine","Spicy/Herbal","Pungent","Pepper","Flowery","Citrus","Orange","Sweet","Skunk","Grape","Minty","Woody","Cheese","Diesel","Tropical","Grapefruit","Nutty","Lemon","Berry","Blueberry","Ammonia","Apple","Rose","Butter","Honey","Tea","Lime","Lavender","Strawberry","Mint","Chestnut","Tree Fruit","Pear","Apricot","Peach","Blue Cheese","Menthol","Coffee","Tar","Mango","Pineapple","Sage","Vanilla","Plum","Tobacco","Violet"]
+
+
 func getEffects(_ type: [String], _ number: Int) -> [String]
 {
-    
-    var rand1: Int
-    var rand2: Int
-    var rand3: Int
+    var rands = [Int]()
+    var rand: Int
     let amount = type.count
-    rand1 = Int(arc4random_uniform(UInt32(amount)))
-    repeat
+    for _ in 0..<number
     {
-        rand2 = Int(arc4random_uniform(UInt32(amount)))
+        repeat
+        {
+            rand = Int(arc4random_uniform(UInt32(amount)))
+        }
+            while rands.contains(rand)
+        rands.append(rand)
     }
-        while rand2 == rand1
     
-    repeat
-    {
-        rand3 = Int(arc4random_uniform(UInt32(amount)))
-    }
-        while (rand3 == rand1) || (rand3 == rand2)
-    
-    var rands = [rand1, rand2, rand3]
     var effectsReturn = [String]()
     for i in 0..<number
     {

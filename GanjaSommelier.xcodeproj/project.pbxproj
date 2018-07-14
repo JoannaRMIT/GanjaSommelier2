@@ -11,6 +11,7 @@
 		0409DD0120F8947100206C10 /* FlavorsByStrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409DD0020F8947100206C10 /* FlavorsByStrain.swift */; };
 		0413667C20F8CC9700311ACE /* effects.json in Resources */ = {isa = PBXBuildFile; fileRef = 0413667B20F8CC9700311ACE /* effects.json */; };
 		0413667E20F8CD8C00311ACE /* EffectsByStrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413667D20F8CD8C00311ACE /* EffectsByStrain.swift */; };
+		04AE3D0A20F9C30C00DCE236 /* StrainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE3D0920F9C30C00DCE236 /* StrainList.swift */; };
 		D6102E2A20D9207E00B1664D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6102E2920D9207E00B1664D /* AppDelegate.swift */; };
 		D6102E2C20D9207E00B1664D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6102E2B20D9207E00B1664D /* ViewController.swift */; };
 		D6102E3120D9208300B1664D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6102E3020D9208300B1664D /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		0409DD0020F8947100206C10 /* FlavorsByStrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavorsByStrain.swift; sourceTree = "<group>"; };
 		0413667B20F8CC9700311ACE /* effects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = effects.json; sourceTree = "<group>"; };
 		0413667D20F8CD8C00311ACE /* EffectsByStrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectsByStrain.swift; sourceTree = "<group>"; };
+		04AE3D0920F9C30C00DCE236 /* StrainList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrainList.swift; sourceTree = "<group>"; };
 		D6102E2620D9207E00B1664D /* GanjaSommelier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GanjaSommelier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6102E2920D9207E00B1664D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6102E2B20D9207E00B1664D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				0409DCFC20F870DA00206C10 /* StrainByFlavor.swift */,
 				0409DD0020F8947100206C10 /* FlavorsByStrain.swift */,
 				0413667D20F8CD8C00311ACE /* EffectsByStrain.swift */,
+				04AE3D0920F9C30C00DCE236 /* StrainList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AE3D0A20F9C30C00DCE236 /* StrainList.swift in Sources */,
 				D6102E2C20D9207E00B1664D /* ViewController.swift in Sources */,
 				0409DD0120F8947100206C10 /* FlavorsByStrain.swift in Sources */,
 				D6102E2A20D9207E00B1664D /* AppDelegate.swift in Sources */,

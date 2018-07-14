@@ -8,7 +8,7 @@
 
 import Foundation
 
-//hardcoded array for the mockup, probably should have made a func that could be used for flavors as well
+//hardcoded array for the mockup
 
 var positive = ["Relaxed", "Hungry", "Euphoric", "Happy", "Creative", "Energetic", "Talkative", "Uplifted", "Tingly", "Sleepy", "Focused", "Giggly", "Aroused"]
 

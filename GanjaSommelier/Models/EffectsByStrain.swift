@@ -8,73 +8,40 @@
 
 import Foundation
 
-struct ResponseData: Decodable
+//hardcoded array for the mockup, probably should have made a func that could be used for flavors as well
+
+var positive = ["Relaxed", "Hungry", "Euphoric", "Happy", "Creative", "Energetic", "Talkative", "Uplifted", "Tingly", "Sleepy", "Focused", "Giggly", "Aroused"]
+
+var negative = ["Dizzy", "Dry Mouth", "Paranoid", "Dry Eyes", "Anxious"]
+
+var medical = ["Depression", "Insomnia", "Pain", "Stress", "Cramps", "Lack of Appetite", "Nausea", "Headaches", "Fatigue", "Eye Pressure", "Inflammation", "Spasticity", "Seizures", "Muscle Spasms"]
+
+func getEffects(_ type: [String], _ number: Int) -> [String]
 {
-    var effects: [Effect]
-}
-
-struct Effect: Decodable
-{
-    var effect: String
-    var type: String
-}
-
-func decodeEffectsJSON() -> [Effect]?
-{
-    if let url = Bundle.main.url(forResource: "effects", withExtension: "json")
-    {
-        do
-        {
-            let data = try Data(contentsOf: url)
-            let decoder = JSONDecoder()
-            let effectsData = try decoder.decode(ResponseData.self, from: data)
-            return effectsData.effects
-        }
-        catch
-        {
-            print("error:\(error)")
-        }
-    }
-    return nil
-}
-
-
-
-func getEffectsArray(effectType: String) -> [String]
-{
-    var allEffects = decodeEffectsJSON()
-    var positiveEffectsArray = [String]()
-    var negativeEffectsArray = [String]()
-    var medicalArray = [String]()
     
-    for i in 0...allEffects!.count
+    var rand1: Int
+    var rand2: Int
+    var rand3: Int
+    let amount = type.count
+    rand1 = Int(arc4random_uniform(UInt32(amount)))
+    repeat
     {
-        if allEffects![i].type == "positive"
-        {
-            positiveEffectsArray.append(allEffects![i].effect)
-        }
-        if allEffects![i].type == "negative"
-        {
-            negativeEffectsArray.append(allEffects![i].effect)
-        }
-        if allEffects![i].type == "medical"
-        {
-            medicalArray.append(allEffects![i].effect)
-        }
+        rand2 = Int(arc4random_uniform(UInt32(amount)))
     }
-    var output = [String]()
-    let switchVal = effectType
-    switch switchVal
+        while rand2 == rand1
+    
+    repeat
     {
-    case "positive":
-        output = positiveEffectsArray
-    case "negative":
-        output = negativeEffectsArray
-    case "medicinal":
-        output = medicalArray
-    default:
-        print("error: input can only be 'positive', 'negative' or 'medicinal'")
-        break
+        rand3 = Int(arc4random_uniform(UInt32(amount)))
     }
-    return output
+        while (rand3 == rand1) || (rand3 == rand2)
+    
+    var rands = [rand1, rand2, rand3]
+    var effectsReturn = [String]()
+    for i in 0..<number
+    {
+        effectsReturn.append(type[rands[i]])
+    }
+    return effectsReturn
+    
 }

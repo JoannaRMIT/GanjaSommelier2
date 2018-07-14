@@ -54,10 +54,10 @@ class tableViewTestTableViewController: UITableViewController {
     
     var fruits = ["Afpak", "Afternoon Delight", "Afwreck", "Alaskan Ice", "Alaskan Thunder Fuck", "Albert Walker", "Alien Inferno", "Alpine Blue", "Alpine Star","Ash", "Atomical Haze", "Aurora Indica", "Balmoral","Bediol"]
 
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 1
-//    }
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -69,7 +69,7 @@ class tableViewTestTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
-
+//
         let kushName = fruits[indexPath.row]
         cell.textLabel?.text = kushName
         cell.detailTextLabel?.text = "Hybrid"
@@ -77,9 +77,5 @@ class tableViewTestTableViewController: UITableViewController {
 
         return cell
     }
-    
-//    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        return "Section \(section)"
-//    }
 
 }

@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -76,12 +75,15 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="9d6-g9-st4" kind="show" id="31y-gW-hcl"/>
+                                    <segue destination="9d6-g9-st4" kind="show" id="iMg-Ez-M1t"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFH-zH-rFQ">
                                 <rect key="frame" x="332" y="32" width="22" height="22"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="n88-eK-hKv" kind="show" id="V2U-jJ-krF"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifier" translatesAutoresizingMaskIntoConstraints="NO" id="twX-8c-G3y">
                                 <rect key="frame" x="311" y="134" width="28" height="28"/>
@@ -153,40 +155,6 @@
             </objects>
             <point key="canvasLocation" x="634" y="814"/>
         </scene>
-        <!--Splash-->
-        <scene sceneID="ylG-by-2p7">
-            <objects>
-                <viewController id="Hfd-C9-rJR" userLabel="Splash" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hLI-Ls-3qt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1hM-Py-KNh">
-                                <rect key="frame" x="0.0" y="20" width="375" height="716.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="1hM-Py-KNh" secondAttribute="height" multiplier="375:716" id="g7l-eY-cqM"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="HGh-nW-fOo">
-                                <rect key="frame" x="58" y="226" width="261" height="247"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                        <constraints>
-                            <constraint firstItem="1hM-Py-KNh" firstAttribute="top" secondItem="tkq-KY-GqS" secondAttribute="top" id="7m9-H2-hD4"/>
-                            <constraint firstItem="HGh-nW-fOo" firstAttribute="bottom" secondItem="tkq-KY-GqS" secondAttribute="bottom" multiplier="3:4" constant="100" id="HZJ-6e-oTR"/>
-                            <constraint firstItem="1hM-Py-KNh" firstAttribute="trailing" secondItem="tkq-KY-GqS" secondAttribute="trailing" id="Uc2-wx-1FT"/>
-                            <constraint firstItem="1hM-Py-KNh" firstAttribute="leading" secondItem="tkq-KY-GqS" secondAttribute="leading" id="cv9-Zm-tVw"/>
-                            <constraint firstItem="HGh-nW-fOo" firstAttribute="centerX" secondItem="tkq-KY-GqS" secondAttribute="centerX" id="wAL-Yn-PWW"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="tkq-KY-GqS"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cdv-ur-e72" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1497" y="1538"/>
-        </scene>
         <!--Search Results Controller-->
         <scene sceneID="klk-H1-0HB">
             <objects>
@@ -208,7 +176,7 @@
                                 <rect key="frame" x="23" y="32" width="38" height="19"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results for 'Pine'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgU-2Y-TO6">
-                                <rect key="frame" x="29" y="70" width="132" height="22"/>
+                                <rect key="frame" x="30" y="70" width="132" height="22"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -470,233 +438,60 @@
             </objects>
             <point key="canvasLocation" x="5224.8000000000002" y="748.87556221889065"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="nt6-n7-JAB">
+        <!--Flavours search results Controller-->
+        <scene sceneID="Rem-om-v4H">
             <objects>
-                <viewController id="KvA-2G-CN1" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZRH-lp-Jfy">
+                <viewController id="VDX-cy-ke9" userLabel="Flavours search results Controller" customClass="ViewController" customModule="GanjaSommelier" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3d0-fj-TPn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KLY-E5-12Q">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seN-aV-MLz">
-                                        <rect key="frame" x="30" y="104" width="165" height="39"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
-                                        <state key="normal" title="Add another flavour">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="arrow-left" translatesAutoresizingMaskIntoConstraints="NO" id="BpX-fr-BAa">
-                                        <rect key="frame" x="23" y="32" width="38" height="19"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Results for 'Pine'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPa-D7-zJk">
-                                        <rect key="frame" x="30" y="70" width="132" height="22"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfh-Iv-leq">
-                                        <rect key="frame" x="332" y="32" width="22" height="22"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVM-fR-u1D">
-                                        <rect key="frame" x="213" y="104" width="136" height="39"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
-                                        <state key="normal" title="Find a strain">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="894-XU-jkL">
-                                        <rect key="frame" x="30" y="157" width="13" height="22"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kush-collection-image" translatesAutoresizingMaskIntoConstraints="NO" id="vof-Oq-rYx">
-                                        <rect key="frame" x="30" y="187" width="60" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Afpak (Hybrid)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ks3-LZ-DBs">
-                                        <rect key="frame" x="110" y="189" width="106" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flavours-icon" translatesAutoresizingMaskIntoConstraints="NO" id="5Zx-Oc-9UJ">
-                                        <rect key="frame" x="110" y="215" width="27" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earthy, chemical, pine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5A-kD-XfK">
-                                        <rect key="frame" x="142" y="219" width="132" height="17"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kush-collection-image" translatesAutoresizingMaskIntoConstraints="NO" id="pj0-GI-7LO">
-                                        <rect key="frame" x="30" y="255" width="60" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Afpak (Hybrid)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKa-C9-g53">
-                                        <rect key="frame" x="110" y="257" width="106" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flavours-icon" translatesAutoresizingMaskIntoConstraints="NO" id="827-43-ZZc">
-                                        <rect key="frame" x="110" y="283" width="27" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earthy, chemical, pine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqU-lO-8sl">
-                                        <rect key="frame" x="142" y="287" width="132" height="17"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kush-collection-image" translatesAutoresizingMaskIntoConstraints="NO" id="loG-wJ-GZE">
-                                        <rect key="frame" x="30" y="323" width="60" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Afpak (Hybrid)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hW1-kW-gwB">
-                                        <rect key="frame" x="110" y="325" width="106" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flavours-icon" translatesAutoresizingMaskIntoConstraints="NO" id="oju-9O-eIe">
-                                        <rect key="frame" x="110" y="351" width="27" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earthy, chemical, pine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wae-6V-Y2t">
-                                        <rect key="frame" x="142" y="355" width="132" height="17"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kush-collection-image" translatesAutoresizingMaskIntoConstraints="NO" id="oxh-LM-K2E">
-                                        <rect key="frame" x="30" y="391" width="60" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Afpak (Hybrid)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVN-77-eaI">
-                                        <rect key="frame" x="110" y="393" width="106" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flavours-icon" translatesAutoresizingMaskIntoConstraints="NO" id="ePR-mU-qLc">
-                                        <rect key="frame" x="110" y="419" width="27" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earthy, chemical, pine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q43-9d-mxn">
-                                        <rect key="frame" x="142" y="423" width="132" height="17"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Search results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jas-sX-GPG">
-                                        <rect key="frame" x="143" y="33" width="89" height="17"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x7G-dg-GId">
-                                        <rect key="frame" x="30" y="175" width="319" height="452"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </tableView>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="arrow-left" translatesAutoresizingMaskIntoConstraints="NO" id="eTQ-dC-OF9">
+                                <rect key="frame" x="23" y="33" width="38" height="19"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Results for 'Pine'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlT-TX-XDS">
+                                <rect key="frame" x="29" y="74" width="132" height="22"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VG0-ZZ-QwA">
+                                <rect key="frame" x="332" y="32" width="22" height="22"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zd-Q2-bLD">
+                                <rect key="frame" x="143" y="33" width="89" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UE4-c3-t6k">
+                                <rect key="frame" x="29" y="104" width="319" height="509"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="vfh-Iv-leq" firstAttribute="top" secondItem="qzU-Ew-X0H" secondAttribute="top" constant="12" id="1T5-UN-8tf"/>
-                                    <constraint firstItem="Jas-sX-GPG" firstAttribute="top" secondItem="qzU-Ew-X0H" secondAttribute="top" constant="13" id="2AK-wW-dxa"/>
-                                    <constraint firstItem="qzU-Ew-X0H" firstAttribute="trailing" secondItem="uVM-fR-u1D" secondAttribute="trailing" constant="26" id="5uW-So-eIF"/>
-                                    <constraint firstItem="seN-aV-MLz" firstAttribute="leading" secondItem="qzU-Ew-X0H" secondAttribute="leading" constant="30" id="9vZ-N3-OzM"/>
-                                    <constraint firstItem="BpX-fr-BAa" firstAttribute="width" secondItem="KLY-E5-12Q" secondAttribute="height" multiplier="38:667" id="IWd-sd-5Ih"/>
-                                    <constraint firstItem="aPa-D7-zJk" firstAttribute="top" secondItem="BpX-fr-BAa" secondAttribute="bottom" constant="19" id="JZi-UM-0fa"/>
-                                    <constraint firstItem="seN-aV-MLz" firstAttribute="top" secondItem="aPa-D7-zJk" secondAttribute="bottom" constant="12" id="OUu-r5-HjV"/>
-                                    <constraint firstItem="BpX-fr-BAa" firstAttribute="top" secondItem="qzU-Ew-X0H" secondAttribute="top" constant="12" id="gZA-wh-zEb"/>
-                                    <constraint firstItem="Jas-sX-GPG" firstAttribute="centerX" secondItem="qzU-Ew-X0H" secondAttribute="centerX" id="iK3-Pn-0LM"/>
-                                    <constraint firstItem="qzU-Ew-X0H" firstAttribute="trailing" secondItem="vfh-Iv-leq" secondAttribute="trailing" constant="21" id="m4d-n7-n79"/>
-                                    <constraint firstItem="aPa-D7-zJk" firstAttribute="leading" secondItem="qzU-Ew-X0H" secondAttribute="leading" constant="30" id="rUi-HL-kYH"/>
-                                    <constraint firstItem="BpX-fr-BAa" firstAttribute="leading" secondItem="qzU-Ew-X0H" secondAttribute="leading" constant="23" id="wGf-at-332"/>
-                                    <constraint firstItem="uVM-fR-u1D" firstAttribute="leading" secondItem="seN-aV-MLz" secondAttribute="trailing" constant="18" id="wQD-nj-Qy1"/>
+                                    <constraint firstAttribute="height" constant="452" id="SVI-FH-Bva"/>
                                 </constraints>
-                                <viewLayoutGuide key="safeArea" id="qzU-Ew-X0H"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="5uW-So-eIF"/>
-                                        <exclude reference="m4d-n7-n79"/>
-                                        <exclude reference="IWd-sd-5Ih"/>
-                                        <exclude reference="gZA-wh-zEb"/>
-                                        <exclude reference="wGf-at-332"/>
-                                        <exclude reference="JZi-UM-0fa"/>
-                                        <exclude reference="rUi-HL-kYH"/>
-                                        <exclude reference="9vZ-N3-OzM"/>
-                                        <exclude reference="OUu-r5-HjV"/>
-                                        <exclude reference="2AK-wW-dxa"/>
-                                        <exclude reference="iK3-Pn-0LM"/>
-                                        <exclude reference="wQD-nj-Qy1"/>
-                                        <exclude reference="1T5-UN-8tf"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="subviews">
-                                        <exclude reference="894-XU-jkL"/>
-                                        <exclude reference="vof-Oq-rYx"/>
-                                        <exclude reference="ks3-LZ-DBs"/>
-                                        <exclude reference="5Zx-Oc-9UJ"/>
-                                        <exclude reference="Z5A-kD-XfK"/>
-                                        <exclude reference="pj0-GI-7LO"/>
-                                        <exclude reference="yKa-C9-g53"/>
-                                        <exclude reference="827-43-ZZc"/>
-                                        <exclude reference="wqU-lO-8sl"/>
-                                        <exclude reference="loG-wJ-GZE"/>
-                                        <exclude reference="hW1-kW-gwB"/>
-                                        <exclude reference="oju-9O-eIe"/>
-                                        <exclude reference="Wae-6V-Y2t"/>
-                                        <exclude reference="oxh-LM-K2E"/>
-                                        <exclude reference="YVN-77-eaI"/>
-                                        <exclude reference="ePR-mU-qLc"/>
-                                        <exclude reference="Q43-9d-mxn"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <include reference="5uW-So-eIF"/>
-                                        <include reference="m4d-n7-n79"/>
-                                        <include reference="IWd-sd-5Ih"/>
-                                        <include reference="gZA-wh-zEb"/>
-                                        <include reference="wGf-at-332"/>
-                                        <include reference="JZi-UM-0fa"/>
-                                        <include reference="rUi-HL-kYH"/>
-                                        <include reference="9vZ-N3-OzM"/>
-                                        <include reference="OUu-r5-HjV"/>
-                                        <include reference="2AK-wW-dxa"/>
-                                        <include reference="iK3-Pn-0LM"/>
-                                        <include reference="wQD-nj-Qy1"/>
-                                        <include reference="1T5-UN-8tf"/>
-                                    </mask>
-                                </variation>
-                            </view>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="u1d-4x-EZp"/>
+                        <constraints>
+                            <constraint firstItem="3zd-Q2-bLD" firstAttribute="centerX" secondItem="UUx-Mk-mIB" secondAttribute="centerX" id="1ch-mi-d5C"/>
+                            <constraint firstItem="UUx-Mk-mIB" firstAttribute="trailing" secondItem="VG0-ZZ-QwA" secondAttribute="trailing" constant="21" id="JKS-FE-Kir"/>
+                            <constraint firstItem="3zd-Q2-bLD" firstAttribute="top" secondItem="UUx-Mk-mIB" secondAttribute="top" constant="13" id="aOQ-4Y-9L5"/>
+                            <constraint firstItem="eTQ-dC-OF9" firstAttribute="top" secondItem="UUx-Mk-mIB" secondAttribute="top" constant="13" id="oxb-Dy-tBo"/>
+                            <constraint firstItem="eTQ-dC-OF9" firstAttribute="leading" secondItem="UUx-Mk-mIB" secondAttribute="leading" constant="23" id="xo8-rE-ANe"/>
+                            <constraint firstItem="VG0-ZZ-QwA" firstAttribute="top" secondItem="UUx-Mk-mIB" secondAttribute="top" constant="12" id="yyH-mc-eUH"/>
+                            <constraint firstItem="UE4-c3-t6k" firstAttribute="leading" secondItem="SlT-TX-XDS" secondAttribute="leading" id="zWx-Rn-PV3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UUx-Mk-mIB"/>
                     </view>
+                    <connections>
+                        <outlet property="resultsTable" destination="UE4-c3-t6k" id="IwJ-dk-Ap8"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xt9-4h-NmN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7gw-Sg-96J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1231" y="139"/>
+            <point key="canvasLocation" x="1965.5999999999999" y="138.98050974512745"/>
         </scene>
         <!--Strains by flavour-->
         <scene sceneID="xJf-ST-UYY">
@@ -735,7 +530,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="va3-Gx-7jq" kind="show" id="fqr-KC-66E"/>
+                                    <segue destination="va3-Gx-7jq" kind="show" id="hnd-Ji-4S7"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -913,6 +708,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCY-i4-7Ty">
                                 <rect key="frame" x="333.5" y="32" width="20.5" height="22"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="n88-eK-hKv" kind="show" id="WLu-Cp-d8W"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favourite strains" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apa-q5-33t">
                                 <rect key="frame" x="30" y="78" width="192" height="29"/>
@@ -1089,6 +887,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hX-fB-coZ">
                                 <rect key="frame" x="332" y="32" width="22" height="22"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="n88-eK-hKv" kind="show" id="QKp-nf-eXs"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-left" translatesAutoresizingMaskIntoConstraints="NO" id="HnH-Sg-xAb">
                                 <rect key="frame" x="23" y="32" width="24" height="19"/>
@@ -1128,16 +929,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flavours-icon" translatesAutoresizingMaskIntoConstraints="NO" id="WxA-tH-4eg">
-                                <rect key="frame" x="30" y="345.5" width="40" height="33"/>
+                                <rect key="frame" x="30" y="346" width="40" height="33"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flavours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mG-cT-xD1">
-                                <rect key="frame" x="88" y="340.5" width="64" height="20"/>
+                                <rect key="frame" x="88" y="341" width="64" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earthy, chemical, pine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjG-Uh-ye0">
-                                <rect key="frame" x="88" y="362.5" width="132" height="17"/>
+                                <rect key="frame" x="88" y="363" width="132" height="17"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1155,7 +956,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="health-icon" translatesAutoresizingMaskIntoConstraints="NO" id="E9b-xi-jgx">
-                                <rect key="frame" x="33" y="477.5" width="37" height="37"/>
+                                <rect key="frame" x="33" y="478" width="37" height="37"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medicinal use" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2n-4y-7CV">
                                 <rect key="frame" x="87" y="477" width="103" height="20"/>
@@ -1170,7 +971,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food-icon" translatesAutoresizingMaskIntoConstraints="NO" id="pq7-ou-OwR">
-                                <rect key="frame" x="30" y="414.5" width="40" height="27"/>
+                                <rect key="frame" x="30" y="415" width="40" height="27"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iy8-8F-17v">
                                 <rect key="frame" x="266" y="189" width="88" height="40"/>
@@ -1261,6 +1062,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8K7-H2-yXf">
                                 <rect key="frame" x="342" y="32" width="22" height="22"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="n88-eK-hKv" kind="show" id="pYs-lJ-HBF"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow-left" translatesAutoresizingMaskIntoConstraints="NO" id="rJk-Ol-9ic">
                                 <rect key="frame" x="23" y="32" width="38" height="19"/>
@@ -1373,48 +1177,118 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Know the basics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PE6-Zk-RDr">
-                                <rect key="frame" x="23" y="117" width="190" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Know the basics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PE6-Zk-RDr">
+                                <rect key="frame" x="30" y="117" width="190" height="29"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k0m-iK-G0Z">
-                                <rect key="frame" x="23" y="110" width="329" height="401"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="k0m-iK-G0Z" secondAttribute="height" multiplier="316:401" id="wOW-Sa-hHI"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="wOW-Sa-hHI"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <exclude reference="wOW-Sa-hHI"/>
-                                    </mask>
-                                </variation>
-                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e54-ff-D2q">
+                                <rect key="frame" x="30" y="154" width="329" height="587"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="1. Test the oil’s potency">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Take 1/4 or 1/2 teaspoon of your oil as a personal dose and add it to a food or drink. Wait an hour and see how you feel. This will help you determine what an appropriate single dose would be. Once you’ve determined how much oil yields your desired effects, multiply that dose per serving if making a shareable batch.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+2. Ensure even distribution</string>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Ensure you stir the oil through your recipe thoroughly to ensure a consistent experience in all doses.
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="3. A little goes a long way">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Remember to follow a 1:1 cannabis to oil ratio
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="4. Decarboxylate cannabis in the oven first">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+This is essential to kill bacteria and microbes from the plant. It will also activate the THC and make your food taste better. 
+
+     Know the right heat and time
+     Heat the oven to 245°F (120°C)
+     Cook for 30 to 40 minutes
+     Mix the buds every 10 minutes
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="5. Stick with a coarser grind">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">This can give your oil a grassy flavour by introducing too much chlorophyll
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="PHA-GN-JdB" firstAttribute="leading" secondItem="GSz-5E-lCI" secondAttribute="leading" constant="23" id="2N3-U6-kRw"/>
                             <constraint firstItem="z2S-97-SKy" firstAttribute="centerX" secondItem="GSz-5E-lCI" secondAttribute="centerX" id="32S-zl-YRb"/>
-                            <constraint firstItem="k0m-iK-G0Z" firstAttribute="top" secondItem="PE6-Zk-RDr" secondAttribute="bottom" constant="8" id="4wT-W7-7lZ"/>
-                            <constraint firstItem="k0m-iK-G0Z" firstAttribute="centerX" secondItem="GSz-5E-lCI" secondAttribute="centerX" id="72E-OS-8hT"/>
                             <constraint firstItem="z2S-97-SKy" firstAttribute="top" secondItem="GSz-5E-lCI" secondAttribute="top" constant="12" id="9Jt-dP-LRW"/>
                             <constraint firstItem="PE6-Zk-RDr" firstAttribute="leading" secondItem="GSz-5E-lCI" secondAttribute="leading" constant="23" id="9r4-Jt-p0p"/>
-                            <constraint firstItem="k0m-iK-G0Z" firstAttribute="width" secondItem="e5d-9T-ju2" secondAttribute="height" multiplier="324:667" id="Nl5-L4-CQn"/>
                             <constraint firstItem="PE6-Zk-RDr" firstAttribute="top" secondItem="PHA-GN-JdB" secondAttribute="bottom" constant="22" id="PIb-vA-MoW"/>
-                            <constraint firstItem="k0m-iK-G0Z" firstAttribute="leading" secondItem="GSz-5E-lCI" secondAttribute="leading" constant="23" id="XJO-I6-g5E"/>
                             <constraint firstItem="GSz-5E-lCI" firstAttribute="trailing" secondItem="U8N-oG-Y9o" secondAttribute="trailing" constant="21" id="a65-2e-a5b"/>
                             <constraint firstItem="PHA-GN-JdB" firstAttribute="width" secondItem="e5d-9T-ju2" secondAttribute="height" multiplier="38:667" id="bb7-JU-cXN"/>
                             <constraint firstItem="U8N-oG-Y9o" firstAttribute="top" secondItem="GSz-5E-lCI" secondAttribute="top" constant="12" id="hKF-3h-FqD"/>
-                            <constraint firstItem="GSz-5E-lCI" firstAttribute="trailing" secondItem="k0m-iK-G0Z" secondAttribute="trailing" constant="19" id="ikj-NL-Pvy"/>
                             <constraint firstItem="z2S-97-SKy" firstAttribute="width" secondItem="e5d-9T-ju2" secondAttribute="height" multiplier="124:667" id="mJM-a3-B3N"/>
                             <constraint firstItem="U8N-oG-Y9o" firstAttribute="width" secondItem="e5d-9T-ju2" secondAttribute="height" multiplier="22:667" id="x9G-fh-aC3"/>
                             <constraint firstItem="PHA-GN-JdB" firstAttribute="top" secondItem="GSz-5E-lCI" secondAttribute="top" constant="12" id="zei-Ie-bgW"/>
@@ -1423,14 +1297,9 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="a65-2e-a5b"/>
-                                <exclude reference="ikj-NL-Pvy"/>
                                 <exclude reference="2N3-U6-kRw"/>
                                 <exclude reference="bb7-JU-cXN"/>
                                 <exclude reference="zei-Ie-bgW"/>
-                                <exclude reference="4wT-W7-7lZ"/>
-                                <exclude reference="72E-OS-8hT"/>
-                                <exclude reference="Nl5-L4-CQn"/>
-                                <exclude reference="XJO-I6-g5E"/>
                                 <exclude reference="9r4-Jt-p0p"/>
                                 <exclude reference="PIb-vA-MoW"/>
                                 <exclude reference="32S-zl-YRb"/>
@@ -1443,14 +1312,9 @@
                         <variation key="widthClass=compact">
                             <mask key="constraints">
                                 <include reference="a65-2e-a5b"/>
-                                <exclude reference="ikj-NL-Pvy"/>
                                 <include reference="2N3-U6-kRw"/>
                                 <include reference="bb7-JU-cXN"/>
                                 <include reference="zei-Ie-bgW"/>
-                                <include reference="4wT-W7-7lZ"/>
-                                <include reference="72E-OS-8hT"/>
-                                <include reference="Nl5-L4-CQn"/>
-                                <include reference="XJO-I6-g5E"/>
                                 <include reference="9r4-Jt-p0p"/>
                                 <include reference="PIb-vA-MoW"/>
                                 <include reference="32S-zl-YRb"/>
@@ -1674,6 +1538,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uci-1a-YGL">
                                 <rect key="frame" x="342" y="32" width="22" height="22"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="n88-eK-hKv" kind="show" id="pdB-mD-ImJ"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow-left" translatesAutoresizingMaskIntoConstraints="NO" id="gLQ-uj-Diy">
                                 <rect key="frame" x="23" y="32" width="38" height="19"/>
@@ -1776,6 +1643,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l15-YM-sWO">
                                 <rect key="frame" x="342" y="32" width="22" height="22"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="n88-eK-hKv" kind="show" id="Sl0-hH-8Uy"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow-left" translatesAutoresizingMaskIntoConstraints="NO" id="HhG-zr-Z3Z">
                                 <rect key="frame" x="23" y="32" width="38" height="19"/>
@@ -2027,6 +1897,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ea1-P6-FwG">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -2053,13 +1929,14 @@
         <image name="heart-tab-active" width="31" height="28"/>
         <image name="kush-collection-image" width="55" height="55"/>
         <image name="kush-detail-image" width="375" height="181"/>
-        <image name="logo" width="296" height="280"/>
         <image name="magnifier" width="28" height="28"/>
         <image name="marijuana-icon" width="33" height="36"/>
         <image name="search-tab-active" width="28" height="28"/>
-        <image name="splash" width="375" height="667"/>
         <image name="star-empty" width="17" height="16"/>
         <image name="star-selected" width="17" height="16"/>
         <image name="thumbs-up" width="22" height="23"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="V2U-jJ-krF"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -128,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				D6E1425920F87B3E00F6D034 /* LaunchScreen.storyboard */,
-				D6E1425720F8514600F6D034 /* tableViewTestTableViewController.swift */,
 				D6776B5820F97CE00051A6BB /* Main.storyboard */,
 			);
 			path = Views;
@@ -137,6 +136,7 @@
 		D6102E4A20D92E5F00B1664D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D6E1425720F8514600F6D034 /* tableViewTestTableViewController.swift */,
 				D6102E2B20D9207E00B1664D /* ViewController.swift */,
 			);
 			path = Controllers;

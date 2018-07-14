@@ -18,8 +18,11 @@ var medical = ["Depression", "Insomnia", "Pain", "Stress", "Cramps", "Lack of Ap
 
 var flavors = ["Earthy","Chemical","Pine","Spicy/Herbal","Pungent","Pepper","Flowery","Citrus","Orange","Sweet","Skunk","Grape","Minty","Woody","Cheese","Diesel","Tropical","Grapefruit","Nutty","Lemon","Berry","Blueberry","Ammonia","Apple","Rose","Butter","Honey","Tea","Lime","Lavender","Strawberry","Mint","Chestnut","Tree Fruit","Pear","Apricot","Peach","Blue Cheese","Menthol","Coffee","Tar","Mango","Pineapple","Sage","Vanilla","Plum","Tobacco","Violet"]
 
+var race = ["Indica", "Sativa", "Hybrid"]
 
-func getEffects(_ type: [String], _ number: Int) -> [String]
+var matchWith = ["Rice", "Chicken", "Noodles", "Soup", "Chilli", "Salad", "Spaghetti", "Pasta", "Pie", "Pizza", "Turkey", "Fish", "Teriyaki", "Pancakes", "Eggs", "Brownies", "Cake", "Ice cream", "Cookies", "Truffles", "Cheesecake", "Chocolate", "Peanut Butter", "Almond", "Salted Caramel", "Strawberries", "Pumpkin", "Butterscotch", "Lemon", "Mousse", "Apple", "Orange", "Banana", "Potato", "Soy", "Vanilla", "Ham", "Cinnamon", "Dairy", "Whiskey"]
+
+func getDetails(_ type: [String], _ number: Int) -> [String]
 {
     var rands = [Int]()
     var rand: Int

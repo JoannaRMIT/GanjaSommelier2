@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0413667E20F8CD8C00311ACE /* EffectsByStrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413667D20F8CD8C00311ACE /* EffectsByStrain.swift */; };
+		0413667E20F8CD8C00311ACE /* DetailsByStrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413667D20F8CD8C00311ACE /* DetailsByStrain.swift */; };
 		04AE3D0A20F9C30C00DCE236 /* StrainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE3D0920F9C30C00DCE236 /* StrainList.swift */; };
 		04AE3D0C20F9C9F100DCE236 /* StrainStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE3D0B20F9C9F100DCE236 /* StrainStructs.swift */; };
 		D6102E2A20D9207E00B1664D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6102E2920D9207E00B1664D /* AppDelegate.swift */; };
@@ -34,7 +34,7 @@
 		0409DCF920F86DAC00206C10 /* Pine.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Pine.json; sourceTree = "<group>"; };
 		0409DCFA20F86DAC00206C10 /* Chemical.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Chemical.json; sourceTree = "<group>"; };
 		0409DCFC20F870DA00206C10 /* StrainByFlavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrainByFlavor.swift; sourceTree = "<group>"; };
-		0413667D20F8CD8C00311ACE /* EffectsByStrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectsByStrain.swift; sourceTree = "<group>"; };
+		0413667D20F8CD8C00311ACE /* DetailsByStrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsByStrain.swift; sourceTree = "<group>"; };
 		04AE3D0920F9C30C00DCE236 /* StrainList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrainList.swift; sourceTree = "<group>"; };
 		04AE3D0B20F9C9F100DCE236 /* StrainStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrainStructs.swift; sourceTree = "<group>"; };
 		D6102E2620D9207E00B1664D /* GanjaSommelier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GanjaSommelier.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				0409DCFC20F870DA00206C10 /* StrainByFlavor.swift */,
-				0413667D20F8CD8C00311ACE /* EffectsByStrain.swift */,
+				0413667D20F8CD8C00311ACE /* DetailsByStrain.swift */,
 				04AE3D0920F9C30C00DCE236 /* StrainList.swift */,
 				04AE3D0B20F9C9F100DCE236 /* StrainStructs.swift */,
 			);
@@ -255,7 +255,7 @@
 				D6102E2A20D9207E00B1664D /* AppDelegate.swift in Sources */,
 				04AE3D0C20F9C9F100DCE236 /* StrainStructs.swift in Sources */,
 				D6E1425820F8514600F6D034 /* tableViewTestTableViewController.swift in Sources */,
-				0413667E20F8CD8C00311ACE /* EffectsByStrain.swift in Sources */,
+				0413667E20F8CD8C00311ACE /* DetailsByStrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

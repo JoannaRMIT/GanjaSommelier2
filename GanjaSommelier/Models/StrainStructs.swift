@@ -12,7 +12,7 @@ struct StrainDetail
 {
     var name: String
     var race: String
-    var match: String
+    var matchWith: String
     var medicinalUse: [String]
     var positiveEffects: [String]
     var negativeEffects: [String]

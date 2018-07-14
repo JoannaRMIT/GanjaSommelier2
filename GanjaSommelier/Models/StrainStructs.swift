@@ -21,7 +21,7 @@ struct StrainInformation
 
 //after all that thinking of structs and ids i just went
 //simple with a dictionary for searched strains, and array
-//for favourited strains. If it's in the favourites array,
+//for favourited strains. If it's name is in the favourites array,
 //it'll be in the stored strains too with it's information
 //and can be accessed with just it's name
 

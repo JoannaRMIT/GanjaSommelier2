@@ -21,7 +21,7 @@ struct Strain: Decodable
     //    var flavor: String
 }
 
-func searchStrainByFlavor(flavor: String) -> [Strain]?
+func searchStrainByFlavor(_ flavor: String) -> [Strain]?
 {
     if let url = Bundle.main.url(forResource: flavor, withExtension: "json")
     {

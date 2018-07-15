@@ -45,3 +45,21 @@ func getDetails(_ type: [String], _ number: Int) -> [String]
     return effectsReturn
     
 }
+
+//getting the real flavours
+
+func appendFlavors(_ strainName: String) -> [String]?
+{
+    var flavoursBuild = [String]()
+    let hardFlavours: [String] = ["Pine", "Earthy", "Chemical"]
+    
+    for flav in hardFlavours
+    {
+        if (searchStrainByFlavor(flav)?.contains(where: {$0.name == strainName}))!
+        {
+            flavoursBuild.append(flav)
+        }
+    }
+
+    return flavoursBuild
+}

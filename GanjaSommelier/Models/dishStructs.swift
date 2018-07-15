@@ -31,7 +31,6 @@ func storeNewDish(_ newDishName: DishInformation)
         dishList[newDishName.name] = newDishName
     }
 }
-
 //do I need a function to create a dish object?
 
 //editing a dish

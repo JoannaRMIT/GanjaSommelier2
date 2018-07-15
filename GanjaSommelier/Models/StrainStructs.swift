@@ -19,11 +19,8 @@ struct StrainInformation
     var negativeEffects: String
 }
 
-//after all that thinking of structs and ids i just went
-//simple with a dictionary for searched strains, and array
-//for favourited strains. If it's name is in the favourites array,
-//it'll be in the stored strains too with it's information
-//and can be accessed with just it's name
+//dictionary for searched strains with all their details, array for favourites names
+//easy lookup for details using just names
 
 var storedStrains = [String: StrainInformation]()
 var favouriteStrains = [String]()
@@ -31,12 +28,15 @@ var favouriteStrains = [String]()
 //building the StrainInformation
 func buildStrainDetails(_ strainName: String) -> StrainInformation
 {
-    let flavoursBuild = getDetails(flavors, 3)
+    //let flavoursBuild = getDetails(flavors, 3)
+    //fixed to get the flavours matching the searches
+    let flavoursBuild = appendFlavors(strainName)!
     let raceBuild = getDetails(race, 1)
     let matchWithBuild = getDetails(matchWith, 1)
     let medicinalUseBuild = getDetails(medicinal, 3)
     let positiveEffectsBuild = getDetails(positive, 4)
     let negativeEffectsBuild = getDetails(negative, 1)
+    
     
     let builtStrainInformation = StrainInformation(name: strainName, flavours: flavoursBuild,race: raceBuild[0], matchWith: matchWithBuild[0], medicinalUse: medicinalUseBuild, positiveEffects: positiveEffectsBuild, negativeEffects: negativeEffectsBuild[0])
     

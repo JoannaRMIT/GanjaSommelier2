@@ -28,9 +28,7 @@ var favouriteStrains = [String]()
 //building the StrainInformation
 func buildStrainDetails(_ strainName: String) -> StrainInformation
 {
-    //let flavoursBuild = getDetails(flavors, 3)
-    //fixed to get the flavours matching the searches
-    let flavoursBuild = appendFlavors(strainName)!
+    let flavoursBuild = getFlavors(strainName)! //fixed to get the flavours matching the searches
     let raceBuild = getDetails(race, 1)
     let matchWithBuild = getDetails(matchWith, 1)
     let medicinalUseBuild = getDetails(medicinal, 3)

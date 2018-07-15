@@ -48,7 +48,7 @@ func getDetails(_ type: [String], _ number: Int) -> [String]
 
 //getting the real flavours
 
-func appendFlavors(_ strainName: String) -> [String]?
+func getFlavors(_ strainName: String) -> [String]?
 {
     var flavoursBuild = [String]()
     let hardFlavours: [String] = ["Pine", "Earthy", "Chemical"]
@@ -60,6 +60,9 @@ func appendFlavors(_ strainName: String) -> [String]?
             flavoursBuild.append(flav)
         }
     }
+    
+    let tempCount = 3 - flavoursBuild.count
+    flavoursBuild += (getDetails(flavors, tempCount))
 
     return flavoursBuild
 }

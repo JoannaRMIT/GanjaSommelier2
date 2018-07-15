@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/joannaingram/Documents/CPT224/Assignments/GanjaSommelier2/GanjaSommelier/Assets.xcassets">
+   </FileRef>
+   <FileRef
       location = "self:GanjaSommelier.xcodeproj">
    </FileRef>
 </Workspace>

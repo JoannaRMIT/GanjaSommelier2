@@ -12,7 +12,6 @@
 		04AE3D0C20F9C9F100DCE236 /* StrainStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE3D0B20F9C9F100DCE236 /* StrainStructs.swift */; };
 		D6102E2A20D9207E00B1664D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6102E2920D9207E00B1664D /* AppDelegate.swift */; };
 		D6102E2C20D9207E00B1664D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6102E2B20D9207E00B1664D /* ViewController.swift */; };
-		D6102E3120D9208300B1664D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6102E3020D9208300B1664D /* Assets.xcassets */; };
 		D6102E3F20D9208300B1664D /* GanjaSommelierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6102E3E20D9208300B1664D /* GanjaSommelierUITests.swift */; };
 		D6776B5920F97CE00051A6BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6776B5820F97CE00051A6BB /* Main.storyboard */; };
 		D6E1425820F8514600F6D034 /* tableViewTestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E1425720F8514600F6D034 /* tableViewTestTableViewController.swift */; };
@@ -40,11 +39,11 @@
 		D6102E2620D9207E00B1664D /* GanjaSommelier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GanjaSommelier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6102E2920D9207E00B1664D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6102E2B20D9207E00B1664D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D6102E3020D9208300B1664D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6102E3520D9208300B1664D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6102E3A20D9208300B1664D /* GanjaSommelierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GanjaSommelierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6102E3E20D9208300B1664D /* GanjaSommelierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GanjaSommelierUITests.swift; sourceTree = "<group>"; };
 		D6102E4020D9208300B1664D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D631765720FB7241000EB938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = /Users/joannaingram/Documents/CPT224/Assignments/GanjaSommelier2/GanjaSommelier/Assets.xcassets; sourceTree = "<absolute>"; };
 		D6776B5820F97CE00051A6BB /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D6E1425720F8514600F6D034 /* tableViewTestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewTestTableViewController.swift; sourceTree = "<group>"; };
 		D6E1425920F87B3E00F6D034 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,12 +99,12 @@
 		D6102E2820D9207E00B1664D /* GanjaSommelier */ = {
 			isa = PBXGroup;
 			children = (
+				D631765720FB7241000EB938 /* Assets.xcassets */,
 				0409DCF720F86D9000206C10 /* Flavors */,
 				D6102E4B20D92E6700B1664D /* Models */,
 				D6102E4A20D92E5F00B1664D /* Controllers */,
 				D6102E4920D92E3F00B1664D /* Views */,
 				D6102E2920D9207E00B1664D /* AppDelegate.swift */,
-				D6102E3020D9208300B1664D /* Assets.xcassets */,
 				D6102E3520D9208300B1664D /* Info.plist */,
 			);
 			path = GanjaSommelier;
@@ -231,7 +230,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6E1425A20F87B3E00F6D034 /* LaunchScreen.storyboard in Resources */,
-				D6102E3120D9208300B1664D /* Assets.xcassets in Resources */,
 				D6776B5920F97CE00051A6BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

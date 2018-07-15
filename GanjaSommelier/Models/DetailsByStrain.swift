@@ -51,7 +51,7 @@ func getDetails(_ type: [String], _ number: Int) -> [String]
 func getFlavors(_ strainName: String) -> [String]?
 {
     var flavoursBuild = [String]()
-    let hardFlavours: [String] = ["Pine", "Earthy", "Chemical"]
+    let hardFlavours: [String] = ["Pine", "Earthy", "Chemical", "Strawberry"]
     
     for flav in hardFlavours
     {
@@ -60,9 +60,8 @@ func getFlavors(_ strainName: String) -> [String]?
             flavoursBuild.append(flav)
         }
     }
-    
-    let tempCount = 3 - flavoursBuild.count
-    flavoursBuild += (getDetails(flavors, tempCount))
+    flavoursBuild += (getDetails(flavors, 2))
+    let flavoursBuild2 = [flavoursBuild[0], flavoursBuild[1], flavoursBuild[2]]
 
-    return flavoursBuild
+    return flavoursBuild2
 }

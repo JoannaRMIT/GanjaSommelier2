@@ -14,12 +14,15 @@ var positive = ["Relaxed", "Hungry", "Euphoric", "Happy", "Creative", "Energetic
 
 var negative = ["Dizzy", "Dry Mouth", "Paranoid", "Dry Eyes", "Anxious"]
 
-var medical = ["Depression", "Insomnia", "Pain", "Stress", "Cramps", "Lack of Appetite", "Nausea", "Headaches", "Fatigue", "Eye Pressure", "Inflammation", "Spasticity", "Seizures", "Muscle Spasms"]
+var medicinal = ["Depression", "Insomnia", "Pain", "Stress", "Cramps", "Lack of Appetite", "Nausea", "Headaches", "Fatigue", "Eye Pressure", "Inflammation", "Spasticity", "Seizures", "Muscle Spasms"]
 
 var flavors = ["Earthy","Chemical","Pine","Spicy/Herbal","Pungent","Pepper","Flowery","Citrus","Orange","Sweet","Skunk","Grape","Minty","Woody","Cheese","Diesel","Tropical","Grapefruit","Nutty","Lemon","Berry","Blueberry","Ammonia","Apple","Rose","Butter","Honey","Tea","Lime","Lavender","Strawberry","Mint","Chestnut","Tree Fruit","Pear","Apricot","Peach","Blue Cheese","Menthol","Coffee","Tar","Mango","Pineapple","Sage","Vanilla","Plum","Tobacco","Violet"]
 
+var race = ["Indica", "Sativa", "Hybrid"]
 
-func getEffects(_ type: [String], _ number: Int) -> [String]
+var matchWith = ["Rice", "Chicken", "Noodles", "Soup", "Chilli", "Salad", "Spaghetti", "Pasta", "Pie", "Pizza", "Turkey", "Fish", "Teriyaki", "Pancakes", "Eggs", "Brownies", "Cake", "Ice cream", "Cookies", "Truffles", "Cheesecake", "Chocolate", "Peanut Butter", "Almond", "Salted Caramel", "Strawberries", "Pumpkin", "Butterscotch", "Lemon", "Mousse", "Apple", "Orange", "Banana", "Potato", "Soy", "Vanilla", "Ham", "Cinnamon", "Dairy", "Whiskey"]
+
+func getDetails(_ type: [String], _ number: Int) -> [String]
 {
     var rands = [Int]()
     var rand: Int
@@ -41,4 +44,24 @@ func getEffects(_ type: [String], _ number: Int) -> [String]
     }
     return effectsReturn
     
+}
+
+//getting the real flavours
+
+func getFlavors(_ strainName: String) -> [String]?
+{
+    var flavoursBuild = [String]()
+    let hardFlavours: [String] = ["Pine", "Earthy", "Chemical", "Strawberry"]
+    
+    for flav in hardFlavours
+    {
+        if (searchStrainByFlavor(flav)?.contains(where: {$0.name == strainName}))!
+        {
+            flavoursBuild.append(flav)
+        }
+    }
+    flavoursBuild += (getDetails(flavors, 2))
+    let flavoursBuild2 = [flavoursBuild[0], flavoursBuild[1], flavoursBuild[2]]
+
+    return flavoursBuild2
 }

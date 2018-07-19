@@ -13,40 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource {
 //    @IBOutlet weak var resultsTable: UITableView!
     var newDishRating: Int
     
-    @IBOutlet weak var star1: UIButton!
-    @IBOutlet weak var star2: UIButton!
-    @IBOutlet weak var star3: UIButton!
-    @IBOutlet weak var star4: UIButton!
-    @IBOutlet weak var star5: UIButton!
     
-    
-    @IBAction func star1(_ sender: Any) {
-        
-        newDishRating = 1
-        star1.setImage("star-selected", for: normal)
-    }
-    
-    @IBAction func star2(_ sender: Any) {
-        newDishRating = 2
-    }
-    
-    @IBAction func star3(_ sender: Any) {
-        newDishRating = 3
-    }
-    
-    @IBAction func star4(_ sender: Any) {
-        newDishRating = 4
-    }
-    
-    @IBAction func star5(_ sender: Any) {
-        newDishRating = 5
-        UIImage.star-selected
-    }
-    @IBOutlet weak var nameInput: UITextField!
-    @IBAction func saveDish(_ sender: Any) {
-        let newDishName = nameInput.text
-        
-    }
     
     
     

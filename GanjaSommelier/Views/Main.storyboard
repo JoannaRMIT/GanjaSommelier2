@@ -185,7 +185,7 @@
                                 <rect key="frame" x="29" y="170" width="359" height="458"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="pCC-rQ-Fl8">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="pCC-rQ-Fl8">
                                         <rect key="frame" x="0.0" y="28" width="359" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pCC-rQ-Fl8" id="z11-Fp-peL">
@@ -374,6 +374,8 @@
                                 <exclude reference="r9w-eA-Ld8"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="4hU-2c-gw2"/>
+                                <exclude reference="wxr-l9-ktB"/>
                                 <exclude reference="2nz-55-Tp1"/>
                                 <exclude reference="LMs-pr-guR"/>
                                 <exclude reference="ZTc-AL-dSN"/>
@@ -387,8 +389,6 @@
                                 <exclude reference="f4o-q7-9u5"/>
                                 <exclude reference="w5D-ZV-TIk"/>
                                 <exclude reference="9Sh-lF-Jw3"/>
-                                <exclude reference="4hU-2c-gw2"/>
-                                <exclude reference="wxr-l9-ktB"/>
                                 <exclude reference="X6q-sE-V4S"/>
                             </mask>
                         </variation>
@@ -414,6 +414,8 @@
                                 <exclude reference="Jfl-KY-mom"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="4hU-2c-gw2"/>
+                                <include reference="wxr-l9-ktB"/>
                                 <include reference="2nz-55-Tp1"/>
                                 <include reference="LMs-pr-guR"/>
                                 <include reference="ZTc-AL-dSN"/>
@@ -427,8 +429,6 @@
                                 <include reference="f4o-q7-9u5"/>
                                 <include reference="w5D-ZV-TIk"/>
                                 <include reference="9Sh-lF-Jw3"/>
-                                <include reference="4hU-2c-gw2"/>
-                                <include reference="wxr-l9-ktB"/>
                                 <include reference="X6q-sE-V4S"/>
                             </mask>
                         </variation>
@@ -723,7 +723,7 @@
                                 <rect key="frame" x="30" y="115" width="359" height="458"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="iLz-6m-DyD">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="iLz-6m-DyD">
                                         <rect key="frame" x="0.0" y="28" width="359" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iLz-6m-DyD" id="QRK-nh-7fe">

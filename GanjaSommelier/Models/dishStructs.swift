@@ -12,10 +12,11 @@ import UIKit
 struct DishInformation
 {
     var name: String
+    var rating: Int!
     var strain: String
-    var notes: String
-    var img: UIImage
-    var rating: Int
+    var notes: String!
+    var img: UIImage!
+    
 }
 
 //use storedDishes for our collection
@@ -34,7 +35,7 @@ struct ListOfDishes
     //create
     mutating func createDish(name: String, strain: String, notes: String, img: UIImage, rating: Int)
     {
-        let newDish: DishInformation = DishInformation(name: name, strain: strain, notes: notes, img: img, rating: rating)
+        let newDish: DishInformation = DishInformation(name: name, rating: rating, strain: strain, notes: notes, img: img)
         if let _ = list[newDish.name]
         {
             print("dish already stored")
@@ -62,11 +63,11 @@ struct ListOfDishes
     }
     
     //edit
-    mutating func editDish(_ dishName: String, newName: String, newStrain: String, newNotes: String, newImg: UIImage, newRating: Int)
+    mutating func editDish(_ dishName: String, newName: String, newRating: Int, newStrain: String, newNotes: String, newImg: UIImage)
     {
         if let _ = list[dishName]
         {
-            let editedDish = DishInformation(name: newName, strain: newStrain, notes: newNotes, img: newImg, rating: newRating)
+            let editedDish = DishInformation(name: newName, rating: newRating, strain: newStrain, notes: newNotes, img: newImg)
             list[dishName] = nil //delete the old dish before storing the new version
             list[editedDish.name] = editedDish
         } else {

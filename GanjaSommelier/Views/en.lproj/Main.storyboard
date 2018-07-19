@@ -1057,7 +1057,7 @@
         <!--Add dish-->
         <scene sceneID="Uxf-Ga-ScP">
             <objects>
-                <viewController id="GXj-W8-sO3" userLabel="Add dish" customClass="ViewController" customModule="GanjaSommelier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GXj-W8-sO3" userLabel="Add dish" customClass="AddDishController" customModule="GanjaSommelier" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WDi-vm-2E6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1065,76 +1065,22 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8K7-H2-yXf">
                                 <rect key="frame" x="370" y="32" width="22" height="22"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <segue destination="n88-eK-hKv" kind="show" id="pYs-lJ-HBF"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="arrow-left" translatesAutoresizingMaskIntoConstraints="NO" id="rJk-Ol-9ic">
                                 <rect key="frame" x="23" y="32" width="38" height="19"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My dish" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5r-6y-yPa">
+                                <rect key="frame" x="140" y="32" width="98" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picture" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UWM-F7-jF4" userLabel="dishPhoto">
                                 <rect key="frame" x="0.0" y="62" width="414" height="181"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o5v-58-GP9" userLabel="notesInput">
-                                <rect key="frame" x="30" y="497" width="357" height="66"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSp-df-Tht">
-                                <rect key="frame" x="30" y="476" width="39" height="17"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVn-Ev-09w" userLabel="1_star">
-                                <rect key="frame" x="30" y="373" width="25" height="22"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                <state key="normal" title="1" image="star-empty"/>
-                                <connections>
-                                    <action selector="star1:" destination="GXj-W8-sO3" eventType="touchUpInside" id="0gV-JW-4hm"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpQ-uG-sU8" userLabel="2_star">
-                                <rect key="frame" x="53" y="373" width="17" height="22"/>
-                                <state key="normal" title="2" image="star-empty"/>
-                                <connections>
-                                    <action selector="star2:" destination="GXj-W8-sO3" eventType="touchUpInside" id="xqp-HA-wZe"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPV-dJ-psB" userLabel="3_star">
-                                <rect key="frame" x="76" y="373" width="17" height="22"/>
-                                <state key="normal" title="3" image="star-empty"/>
-                                <connections>
-                                    <action selector="star3:" destination="GXj-W8-sO3" eventType="touchUpInside" id="xaK-mj-Tzo"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AH3-iS-buv" userLabel="4_star">
-                                <rect key="frame" x="99" y="373" width="17" height="22"/>
-                                <state key="normal" title="4" image="star-empty"/>
-                                <connections>
-                                    <action selector="star4:" destination="GXj-W8-sO3" eventType="touchUpInside" id="VJG-fe-i9d"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6S3-Qg-HgM" userLabel="5_star">
-                                <rect key="frame" x="121" y="373" width="17" height="22"/>
-                                <state key="normal" title="5" image="star-empty"/>
-                                <connections>
-                                    <action selector="star5:" destination="GXj-W8-sO3" eventType="touchUpInside" id="RSj-Lr-mBC"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marijuana-icon" translatesAutoresizingMaskIntoConstraints="NO" id="l2L-Yd-P0j">
-                                <rect key="frame" x="30" y="420" width="33" height="36"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Afternoon Delight (Hybrid)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQe-fW-nPb" userLabel="strainName">
-                                <rect key="frame" x="72.999999999999986" y="429" width="185.66666666666663" height="19"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name your dish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McY-SF-XbJ">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name your dish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McY-SF-XbJ">
                                 <rect key="frame" x="27" y="271" width="113" height="19"/>
+                                <accessibility key="accessibilityConfiguration" label="a"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1148,6 +1094,68 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVn-Ev-09w" userLabel="1_star">
+                                <rect key="frame" x="30" y="373" width="25" height="22"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <state key="normal" title="1" image="star-empty"/>
+                                <connections>
+                                    <action selector="star1:" destination="GXj-W8-sO3" eventType="touchDown" id="sbl-Ra-Fpz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpQ-uG-sU8" userLabel="2_star">
+                                <rect key="frame" x="53" y="373" width="17" height="22"/>
+                                <state key="normal" title="2" image="star-empty"/>
+                                <connections>
+                                    <action selector="star2:" destination="GXj-W8-sO3" eventType="touchDown" id="4e9-oo-RWE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPV-dJ-psB" userLabel="3_star">
+                                <rect key="frame" x="76" y="373" width="17" height="22"/>
+                                <state key="normal" title="3" image="star-empty"/>
+                                <connections>
+                                    <action selector="star3:" destination="GXj-W8-sO3" eventType="touchDown" id="3NW-81-YeC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AH3-iS-buv" userLabel="4_star">
+                                <rect key="frame" x="99" y="373" width="17" height="22"/>
+                                <state key="normal" title="4" image="star-empty"/>
+                                <connections>
+                                    <action selector="star4:" destination="GXj-W8-sO3" eventType="touchDown" id="59F-sa-W9G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6S3-Qg-HgM" userLabel="5_star">
+                                <rect key="frame" x="121" y="373" width="17" height="22"/>
+                                <state key="normal" title="5" image="star-empty"/>
+                                <connections>
+                                    <action selector="star5:" destination="GXj-W8-sO3" eventType="touchDown" id="OyQ-Vw-zEH"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marijuana-icon" translatesAutoresizingMaskIntoConstraints="NO" id="l2L-Yd-P0j">
+                                <rect key="frame" x="30" y="420" width="33" height="36"/>
+                            </imageView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Afternoon Delight (Hybrid)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQe-fW-nPb" userLabel="strainName">
+                                <rect key="frame" x="72.999999999999986" y="429" width="185.66666666666663" height="19"/>
+                                <accessibility key="accessibilityConfiguration" label="sn"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSp-df-Tht">
+                                <rect key="frame" x="30" y="476" width="39" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o5v-58-GP9" userLabel="notesInput">
+                                <rect key="frame" x="30" y="497" width="357" height="66"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES"/>
+                                </accessibility>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uF3-rz-fRX" userLabel="Save">
                                 <rect key="frame" x="27" y="584" width="360" height="45"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1159,17 +1167,14 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="saveDish:" destination="GXj-W8-sO3" eventType="touchUpInside" id="Jc9-uq-5y6"/>
+                                    <action selector="addDishSave:" destination="GXj-W8-sO3" eventType="touchUpInside" id="7En-Sl-Lek"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My dish" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5r-6y-yPa">
-                                <rect key="frame" x="140" y="32" width="98" height="17"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                         <constraints>
                             <constraint firstItem="UWM-F7-jF4" firstAttribute="leading" secondItem="OZI-vy-Idc" secondAttribute="leading" id="0WY-uW-dof"/>
                             <constraint firstItem="OSp-df-Tht" firstAttribute="leading" secondItem="OZI-vy-Idc" secondAttribute="leading" constant="30" id="1M5-gH-MFv"/>
@@ -1210,12 +1215,9 @@
                         <viewLayoutGuide key="safeArea" id="OZI-vy-Idc"/>
                     </view>
                     <connections>
-                        <outlet property="nameInput" destination="fAk-RJ-Fzq" id="NrK-pu-vtm"/>
-                        <outlet property="oneStar" destination="UVn-Ev-09w" id="mq6-iu-zJt"/>
-                        <outlet property="star2" destination="RpQ-uG-sU8" id="Frj-iJ-KDy"/>
-                        <outlet property="star3" destination="wPV-dJ-psB" id="AB1-Hu-ezU"/>
-                        <outlet property="star4" destination="AH3-iS-buv" id="4YC-3N-Wgw"/>
-                        <outlet property="star5" destination="6S3-Qg-HgM" id="5ny-zJ-3jS"/>
+                        <outlet property="addDishName" destination="fAk-RJ-Fzq" id="Nxi-0k-nY0"/>
+                        <outlet property="addDishNotes" destination="o5v-58-GP9" id="z2Q-Ai-idD"/>
+                        <outlet property="addDishStrain" destination="xQe-fW-nPb" id="Jib-SE-FcV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZH-nq-2Qk" sceneMemberID="firstResponder"/>
@@ -1926,6 +1928,6 @@ Cg
         <image name="thumbs-up" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pYs-lJ-HBF"/>
+        <segue reference="QKp-nf-eXs"/>
     </inferredMetricsTieBreakers>
 </document>

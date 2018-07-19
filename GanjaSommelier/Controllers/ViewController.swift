@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource {
     
 //    @IBOutlet weak var resultsTable: UITableView!
-    var newDishRating: Int
+
     
     
     

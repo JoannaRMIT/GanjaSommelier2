@@ -35,12 +35,8 @@ class AddDishController: UIViewController {
         //if addDishName is empty or exists in db {pop up error and return;}
         
         
-        let addDishTempStruct: DishInformation = DishInformation(name: addDishName.text!, rating: addDishRating, strain: addDishStrain.text!, notes: addDishNotes.text, img: nil){
+        let addDishTempStruct: DishInformation = DishInformation(name: addDishName.text!, rating: addDishRating, strain: addDishStrain.text!, notes: addDishNotes.text, img: nil)
             //add to sqlite db (fix up img later), switch to dish table view
-        } else {
-            print("error")
-            // show error pop up
-        }
     }
     
     

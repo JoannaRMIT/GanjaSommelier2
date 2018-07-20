@@ -38,16 +38,16 @@ class ViewController: UIViewController, UITableViewDataSource {
             print("Error opening database")
         }
         
-        let createStoredStrainsTable = "CREATE TABLE StoredStrains (name TEXT PRIMARY KEY NOT NULL UNIQUE, flavours TEXT NOT NULL, race TEXT NOT NULL, matchWith TEXT, medicinalUse TEXT, positiveEffects TEXT, negativeEffects TEXT, isFavourite BOOLEAN NOT NULL)"
+        let createStoredStrainsTable = "CREATE TABLE IF NOT EXISTS StoredStrains (name TEXT PRIMARY KEY NOT NULL UNIQUE, flavours TEXT NOT NULL, race TEXT NOT NULL, matchWith TEXT, medicinalUse TEXT, positiveEffects TEXT, negativeEffects TEXT, isFavourite BOOLEAN NOT NULL)"
         
         if sqlite3_exec(db, createStoredStrainsTable, nil, nil, nil) != SQLITE_OK {
             print("error creating strains table")
         }
         
-        let createStoredDishesTable = "CREATE TABLE StoredDishes (name TEXT PRIMARY KEY NOT NULL UNIQUE, rating INT, strain TEXT, notes TEXT, img TEXT"
+        let createStoredDishesTable = "CREATE TABLE IF NOT EXISTS StoredDishes (name TEXT PRIMARY KEY NOT NULL UNIQUE, rating INT, strain TEXT, notes TEXT, img TEXT)"
         
         if sqlite3_exec(db, createStoredDishesTable, nil, nil, nil) != SQLITE_OK {
-            print("error creating strains table")
+            print("error creating dishes table")
         }
         
         print("database created successfully")

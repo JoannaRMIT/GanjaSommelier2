@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import SQLite3
 
 class AddDishController: UIViewController {
-
+    
+//add bool from segue whether add or edit. if edit, send select query as struct
+//if editDishSegue{
+//    addDishValues = prepared: DishInformation
+//    load values, but store original name in a tempVar
+//    } else {
+//        clear all values, init rating to 0
+//    }
+    
     @IBOutlet weak var addDishName: UITextField!
     
     var addDishRating: Int = 0
+    
     @IBAction func star1(_ sender: UIButton) {
         addDishRating = 1
     }
@@ -33,10 +43,35 @@ class AddDishController: UIViewController {
     
     @IBAction func addDishSave(_ sender: UIButton) {
         //if addDishName is empty or exists in db {pop up error and return;}
+        var dishNameEmpty = false
+        var dishNameExists = false
+        if addDishName == nil {
+            //pop up error
+            print("dish name empty")
+            dishNameEmpty = true
+        }
+        // if editDishSegue = true
+        // delete current dish row, using tempVar from editDishSeque
+        let db = ganjaDB()
+        let doesDishNameExist = "SELECT EXISTS(SELECT 1 FROM StoredDishes WHERE name = \(addDishName))"
+        let dishNameExistsCondition = sqlite3_exec(db, doesDishNameExist, nil, nil, nil);
+        if  dishNameExistsCondition == SQLITE_OK {
+            //pop up error
+            print("dish name exists")
+            dishNameExists = true
+        }
+        
+        if dishNameEmpty || dishNameExists{ return }
+        //halt the save if there's an error, otherwise continue
+        
+        let addDishTempStruct = DishInformation(name: addDishName.text!, rating: addDishRating, strain: addDishStrain.text!, notes: addDishNotes.text, img: nil)
+            //add to sqlite db (fix up img later), segue to dish table view
+        
+        let addDishToTable = "INSERT INTO StoredDishes VALUES (\(addDishTempStruct.name),\(addDishTempStruct.rating), \(addDishTempStruct.strain), \(addDishTempStruct.notes), \(addDishTempStruct.img))"
+        
+        sqlite3_exec(db, addDishToTable, nil, nil, nil);
         
         
-        let addDishTempStruct: DishInformation = DishInformation(name: addDishName.text!, rating: addDishRating, strain: addDishStrain.text!, notes: addDishNotes.text, img: nil)
-            //add to sqlite db (fix up img later), switch to dish table view
     }
     
     

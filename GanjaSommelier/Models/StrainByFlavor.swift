@@ -15,10 +15,10 @@ struct ResponseData: Decodable
 
 struct Strain: Decodable
 {
-    //    var id: Int
+    var id: Int
     var name: String
-    //    var race: String
-    //    var flavor: String
+    var race: String
+    var flavor: String
 }
 
 func searchStrainByFlavor(_ flavor: String) -> [Strain]?

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SQLite3
 
 struct StrainInformation
 {
@@ -18,6 +19,37 @@ struct StrainInformation
     var positiveEffects: [String]
     var negativeEffects: String
 }
+
+func ganjaDB() ->OpaquePointer?
+{
+    var db: OpaquePointer?
+    
+    let fileUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("ganjaDatabase.sqlite")
+    
+    if sqlite3_open(fileUrl.path, &db) != SQLITE_OK{
+        print("Error opening database")
+    }
+    return db
+}
+
+func createTables()
+{
+    var db = ganjaDB()
+    let createStoredStrainsTable = "CREATE TABLE IF NOT EXISTS StoredStrains (name TEXT PRIMARY KEY NOT NULL UNIQUE, flavours TEXT NOT NULL, race TEXT NOT NULL, matchWith TEXT, medicinalUse TEXT, positiveEffects TEXT, negativeEffects TEXT, isFavourite BOOLEAN NOT NULL)"
+    
+    if sqlite3_exec(db, createStoredStrainsTable, nil, nil, nil) != SQLITE_OK {
+        print("error creating strains table")
+    }
+    
+    let createStoredDishesTable = "CREATE TABLE IF NOT EXISTS StoredDishes (name TEXT PRIMARY KEY NOT NULL UNIQUE, rating INT, strain TEXT, notes TEXT, img TEXT)"
+    
+    if sqlite3_exec(db, createStoredDishesTable, nil, nil, nil) != SQLITE_OK {
+        print("error creating dishes table")
+    }
+    
+    print("database created successfully")
+}
+
 
 //use searchedStrains for our collection
 var searchedStrains = ListOfStrains()

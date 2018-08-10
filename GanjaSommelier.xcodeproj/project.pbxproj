@@ -14,7 +14,6 @@
 		0455BBD820FA462400CEBB9F /* dishStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0455BBD720FA462400CEBB9F /* dishStructs.swift */; };
 		04AE3D0C20F9C9F100DCE236 /* StrainStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE3D0B20F9C9F100DCE236 /* StrainStructs.swift */; };
 		04CB5B192100AB2C00DF5D30 /* AddDishController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB5B182100AB2C00DF5D30 /* AddDishController.swift */; };
-		04CB5B1A2100B61000DF5D30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CB5B1C2100B61000DF5D30 /* Main.storyboard */; };
 		D6102E2A20D9207E00B1664D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6102E2920D9207E00B1664D /* AppDelegate.swift */; };
 		D6102E2C20D9207E00B1664D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6102E2B20D9207E00B1664D /* ViewController.swift */; };
 		D6102E3F20D9208300B1664D /* GanjaSommelierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6102E3E20D9208300B1664D /* GanjaSommelierUITests.swift */; };
@@ -52,7 +51,6 @@
 		D6102E3E20D9208300B1664D /* GanjaSommelierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GanjaSommelierUITests.swift; sourceTree = "<group>"; };
 		D6102E4020D9208300B1664D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D631765720FB7241000EB938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = /Users/joannaingram/Documents/CPT224/Assignments/GanjaSommelier2/GanjaSommelier/Assets.xcassets; sourceTree = "<absolute>"; };
-		D6776B5820F97CE00051A6BB /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D6E1425720F8514600F6D034 /* tableViewTestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewTestTableViewController.swift; sourceTree = "<group>"; };
 		D6E1425920F87B3E00F6D034 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -242,7 +240,6 @@
 			files = (
 				0419E5C820FB29B40051AC3B /* Strawberry.json in Resources */,
 				D6E1425A20F87B3E00F6D034 /* LaunchScreen.storyboard in Resources */,
-				D6776B5920F97CE00051A6BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
